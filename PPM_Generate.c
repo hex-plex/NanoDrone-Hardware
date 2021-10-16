@@ -16,14 +16,14 @@
 
 int64_t ppm[CHANNEL_NUMBER];
 
-int64_t alarm_callback(alarm_t_id id, void *user_data){
+int64_t alarm_callback(alarm_id_t id, void *user_data){
 
 	static bool state = TRUE;
 	
 	if (state) {  //start pulse
 		gpio_put(sigPin, onState);
     	state = FALSE;
-    	return PULSE_LENGTH * 2 //(callback again triggered in returned value (microseconds))
+    	return (PULSE_LENGTH * 2); //(callback again triggered in returned value (microseconds))
 	  } 
   	
 	else {       //end pulse and calculate when to start the next pulse
@@ -37,13 +37,13 @@ int64_t alarm_callback(alarm_t_id id, void *user_data){
       		calc_rest = calc_rest + PULSE_LENGTH;
       		int64_t next_pulse = (FRAME_LENGTH - calc_rest) * 2;
       		calc_rest = 0;
-      		return next_pulse //(callback again triggered in next_pulse microseconds)
+      		return next_pulse; //(callback again triggered in next_pulse microseconds)
     	   }
     	else{
       		int64_t next_pulse = (ppm[cur_chan_numb] - PULSE_LENGTH) * 2;
       		calc_rest = calc_rest + ppm[cur_chan_numb];
       		cur_chan_numb++;
-      		return next_pulse //(callback again triggered in next_pulse microseconds)
+      		return next_pulse; //(callback again triggered in next_pulse microseconds)
     		}     
   		}		
 }
@@ -61,7 +61,7 @@ int main(){
 	
 	gpio_put(sigPin, offState);
 	
-	add_alarm_in_ms(100, alarm_callback, NULL, FALSE)
+	add_alarm_in_ms(100, alarm_callback, NULL, FALSE);
 	
 	while(1){	
 		/*
