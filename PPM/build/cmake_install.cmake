@@ -40,7 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/pico-sdk/cmake_install.cmake")
-  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/cmake_install.cmake")
+  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/MainController/cmake_install.cmake")
 
 endif()
 

@@ -165,7 +165,7 @@ PPM_Generate: cmake_check_build_system
 
 # fast build rule for target.
 PPM_Generate/fast:
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/PPM_Generate.dir/build.make PPM_Generate/CMakeFiles/PPM_Generate.dir/build
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/PPM_Generate.dir/build.make MainController/CMakeFiles/PPM_Generate.dir/build
 .PHONY : PPM_Generate/fast
 
 #=============================================================================
@@ -178,7 +178,7 @@ ELF2UF2Build: cmake_check_build_system
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build.make PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/ELF2UF2Build.dir/build.make MainController/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
 # Help Target

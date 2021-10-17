@@ -64,35 +64,35 @@ CMAKE_BINARY_DIR = /home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build
 
 # The main recursive "all" target.
 all: pico-sdk/all
-all: PPM_Generate/all
+all: MainController/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk/preinstall
-preinstall: PPM_Generate/preinstall
+preinstall: MainController/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: pico-sdk/clean
-clean: PPM_Generate/clean
+clean: MainController/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory PPM_Generate
+# Directory level rules for directory MainController
 
 # Recursive "all" directory target.
-PPM_Generate/all: PPM_Generate/CMakeFiles/PPM_Generate.dir/all
-PPM_Generate/all: PPM_Generate/CMakeFiles/ELF2UF2Build.dir/all
-.PHONY : PPM_Generate/all
+MainController/all: MainController/CMakeFiles/PPM_Generate.dir/all
+MainController/all: MainController/CMakeFiles/ELF2UF2Build.dir/all
+.PHONY : MainController/all
 
 # Recursive "preinstall" directory target.
-PPM_Generate/preinstall:
-.PHONY : PPM_Generate/preinstall
+MainController/preinstall:
+.PHONY : MainController/preinstall
 
 # Recursive "clean" directory target.
-PPM_Generate/clean: PPM_Generate/CMakeFiles/PPM_Generate.dir/clean
-PPM_Generate/clean: PPM_Generate/CMakeFiles/ELF2UF2Build.dir/clean
-.PHONY : PPM_Generate/clean
+MainController/clean: MainController/CMakeFiles/PPM_Generate.dir/clean
+MainController/clean: MainController/CMakeFiles/ELF2UF2Build.dir/clean
+.PHONY : MainController/clean
 
 #=============================================================================
 # Directory level rules for directory pico-sdk
@@ -1396,57 +1396,57 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 #=============================================================================
-# Target rules for target PPM_Generate/CMakeFiles/PPM_Generate.dir
+# Target rules for target MainController/CMakeFiles/PPM_Generate.dir
 
 # All Build rule for target.
-PPM_Generate/CMakeFiles/PPM_Generate.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-PPM_Generate/CMakeFiles/PPM_Generate.dir/all: PPM_Generate/CMakeFiles/ELF2UF2Build.dir/all
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/PPM_Generate.dir/build.make PPM_Generate/CMakeFiles/PPM_Generate.dir/depend
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/PPM_Generate.dir/build.make PPM_Generate/CMakeFiles/PPM_Generate.dir/build
+MainController/CMakeFiles/PPM_Generate.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+MainController/CMakeFiles/PPM_Generate.dir/all: MainController/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/PPM_Generate.dir/build.make MainController/CMakeFiles/PPM_Generate.dir/depend
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/PPM_Generate.dir/build.make MainController/CMakeFiles/PPM_Generate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76 "Built target PPM_Generate"
-.PHONY : PPM_Generate/CMakeFiles/PPM_Generate.dir/all
+.PHONY : MainController/CMakeFiles/PPM_Generate.dir/all
 
 # Build rule for subdir invocation for target.
-PPM_Generate/CMakeFiles/PPM_Generate.dir/rule: cmake_check_build_system
+MainController/CMakeFiles/PPM_Generate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles 80
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PPM_Generate/CMakeFiles/PPM_Generate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainController/CMakeFiles/PPM_Generate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles 0
-.PHONY : PPM_Generate/CMakeFiles/PPM_Generate.dir/rule
+.PHONY : MainController/CMakeFiles/PPM_Generate.dir/rule
 
 # Convenience name for target.
-PPM_Generate: PPM_Generate/CMakeFiles/PPM_Generate.dir/rule
+PPM_Generate: MainController/CMakeFiles/PPM_Generate.dir/rule
 .PHONY : PPM_Generate
 
 # clean rule for target.
-PPM_Generate/CMakeFiles/PPM_Generate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/PPM_Generate.dir/build.make PPM_Generate/CMakeFiles/PPM_Generate.dir/clean
-.PHONY : PPM_Generate/CMakeFiles/PPM_Generate.dir/clean
+MainController/CMakeFiles/PPM_Generate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/PPM_Generate.dir/build.make MainController/CMakeFiles/PPM_Generate.dir/clean
+.PHONY : MainController/CMakeFiles/PPM_Generate.dir/clean
 
 #=============================================================================
-# Target rules for target PPM_Generate/CMakeFiles/ELF2UF2Build.dir
+# Target rules for target MainController/CMakeFiles/ELF2UF2Build.dir
 
 # All Build rule for target.
-PPM_Generate/CMakeFiles/ELF2UF2Build.dir/all:
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build.make PPM_Generate/CMakeFiles/ELF2UF2Build.dir/depend
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build.make PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build
+MainController/CMakeFiles/ELF2UF2Build.dir/all:
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/ELF2UF2Build.dir/build.make MainController/CMakeFiles/ELF2UF2Build.dir/depend
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/ELF2UF2Build.dir/build.make MainController/CMakeFiles/ELF2UF2Build.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ELF2UF2Build"
-.PHONY : PPM_Generate/CMakeFiles/ELF2UF2Build.dir/all
+.PHONY : MainController/CMakeFiles/ELF2UF2Build.dir/all
 
 # Build rule for subdir invocation for target.
-PPM_Generate/CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
+MainController/CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PPM_Generate/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainController/CMakeFiles/ELF2UF2Build.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/CMakeFiles 0
-.PHONY : PPM_Generate/CMakeFiles/ELF2UF2Build.dir/rule
+.PHONY : MainController/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
-ELF2UF2Build: PPM_Generate/CMakeFiles/ELF2UF2Build.dir/rule
+ELF2UF2Build: MainController/CMakeFiles/ELF2UF2Build.dir/rule
 .PHONY : ELF2UF2Build
 
 # clean rule for target.
-PPM_Generate/CMakeFiles/ELF2UF2Build.dir/clean:
-	$(MAKE) $(MAKESILENT) -f PPM_Generate/CMakeFiles/ELF2UF2Build.dir/build.make PPM_Generate/CMakeFiles/ELF2UF2Build.dir/clean
-.PHONY : PPM_Generate/CMakeFiles/ELF2UF2Build.dir/clean
+MainController/CMakeFiles/ELF2UF2Build.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MainController/CMakeFiles/ELF2UF2Build.dir/build.make MainController/CMakeFiles/ELF2UF2Build.dir/clean
+.PHONY : MainController/CMakeFiles/ELF2UF2Build.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

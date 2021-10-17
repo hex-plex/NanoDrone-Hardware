@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/varad/pico/pico_project/client_server/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

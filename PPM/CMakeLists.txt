@@ -11,4 +11,4 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 # Add subdirectories:
-add_subdirectory(PPM_Generate)
+add_subdirectory(MainController)

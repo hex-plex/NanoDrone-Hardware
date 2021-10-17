@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../PPM_Generate/CMakeLists.txt"
+  "../MainController/CMakeLists.txt"
   "CMakeFiles/3.20.4/CMakeASMCompiler.cmake"
   "CMakeFiles/3.20.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.4/CMakeSystem.cmake"
-  "PPM_Generate/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
+  "MainController/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "../pico_sdk_import.cmake"
   "/home/hexplex0xff/picodev/pico-sdk/CMakeLists.txt"
   "/home/hexplex0xff/picodev/pico-sdk/cmake/Platform/PICO.cmake"
@@ -207,8 +207,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/src/rp2040/hardware_regs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/src/rp2040/hardware_structs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "PPM_Generate/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
-  "PPM_Generate/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MainController/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
+  "MainController/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -216,6 +216,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"
-  "PPM_Generate/CMakeFiles/PPM_Generate.dir/DependInfo.cmake"
-  "PPM_Generate/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
+  "MainController/CMakeFiles/PPM_Generate.dir/DependInfo.cmake"
+  "MainController/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   )
