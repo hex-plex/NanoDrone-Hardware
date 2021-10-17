@@ -6,8 +6,8 @@ add_executable(PPM_Generate
 target_link_libraries(PPM_Generate pico_stdlib hardware_gpio hardware_timer)
 
 # enable uart output, disable usb ouput
-pico_enable_stdio_uart(PPM_Generate 1)
-pico_enable_stdio_usb(PPM_Generate 0)
+pico_enable_stdio_uart(PPM_Generate 0)
+pico_enable_stdio_usb(PPM_Generate 1)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(PPM_Generate)

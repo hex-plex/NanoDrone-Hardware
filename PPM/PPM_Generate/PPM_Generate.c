@@ -31,14 +31,14 @@ int64_t alarm_callback(alarm_id_t id, void *user_data){
 	printf("Callback Triggered in %d (micros)(cpu_time)\n", (uint32_t)time_taken);
 	if (state) {  //start pulse
 		printf("start pulse \n");
-		//gpio_put(sigPin, onState);
+		gpio_put(sigPin, onState);
 		computed_trans_time = (PULSE_LENGTH * 2);
     		state = FALSE;
     	//(callback again triggered in returned value (microseconds))
 	  } 
   	
 	else {       //end pulse and calculate when to start the next pulse
-    	//gpio_put(sigPin, offState);
+    	gpio_put(sigPin, offState);
     	state = TRUE;
 		printf("pause pulse \n");
     	if(cur_chan_numb >= CHANNEL_NUMBER){
@@ -68,17 +68,17 @@ int64_t alarm_callback(alarm_id_t id, void *user_data){
 int main(){
 	
 	stdio_init_all();
-	//gpio_init(sigPin);
+	gpio_init(sigPin);
 	gpio_set_dir(sigPin, GPIO_OUT);
 	//gpio_init(13);
 	//gpio_set_dir(13, GPIO_OUT);
 
 	//gpio_put(13, 1);
 	for(int i=0; i<CHANNEL_NUMBER; i++){
-      ppm[i]= CHANNEL_DEFAULT_VALUE;
-	  }
+      ppm[i]= 1000;
+	}
 	
-	//gpio_put(sigPin, offState);
+	gpio_put(sigPin, offState);
 	computed_trans_time = 100;
 	add_alarm_in_us(computed_trans_time/2, alarm_callback, NULL, FALSE);
 	
