@@ -4,7 +4,7 @@ import time
 
 def server_program():
     # get the hostname
-    host = '192.168.1.2'
+    host = '192.168.43.18'
     port = 9999  # initiate port no above 1024
 
     server_socket = socket.socket()  # get instance

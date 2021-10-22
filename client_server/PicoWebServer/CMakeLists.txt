@@ -1,5 +1,5 @@
 add_executable(PicoESP
-        PicoWebServer.c
+        PicoWebServer.cpp
         )
 
 # Pull in our pico_stdlib which pulls in commonly used features

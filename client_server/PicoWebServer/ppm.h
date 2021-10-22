@@ -62,7 +62,7 @@ int64_t alarm_callback(alarm_id_t id, void *user_data){
     return (int64_t)(computed_trans_time/2);	
 }
 
-class PPMGen{
+class PPMGen {
     public:
         PPMGen();
         PPMGen(int);

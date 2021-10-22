@@ -144,29 +144,29 @@ ELF2UF2Build/fast:
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build.make PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
-PicoWebServer.obj: PicoWebServer.c.obj
+PicoWebServer.obj: PicoWebServer.cpp.obj
 .PHONY : PicoWebServer.obj
 
 # target to build an object file
-PicoWebServer.c.obj:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.c.obj
-.PHONY : PicoWebServer.c.obj
+PicoWebServer.cpp.obj:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj
+.PHONY : PicoWebServer.cpp.obj
 
-PicoWebServer.i: PicoWebServer.c.i
+PicoWebServer.i: PicoWebServer.cpp.i
 .PHONY : PicoWebServer.i
 
 # target to preprocess a source file
-PicoWebServer.c.i:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.c.i
-.PHONY : PicoWebServer.c.i
+PicoWebServer.cpp.i:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.i
+.PHONY : PicoWebServer.cpp.i
 
-PicoWebServer.s: PicoWebServer.c.s
+PicoWebServer.s: PicoWebServer.cpp.s
 .PHONY : PicoWebServer.s
 
 # target to generate assembly for a file
-PicoWebServer.c.s:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.c.s
-.PHONY : PicoWebServer.c.s
+PicoWebServer.cpp.s:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.s
+.PHONY : PicoWebServer.cpp.s
 
 home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj

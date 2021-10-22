@@ -117,7 +117,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.c" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
@@ -172,6 +171,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
+  "/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.cpp" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 

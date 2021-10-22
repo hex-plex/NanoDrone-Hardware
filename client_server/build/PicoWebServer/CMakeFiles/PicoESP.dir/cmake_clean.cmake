@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PicoESP.dir/PicoWebServer.c.obj"
-  "CMakeFiles/PicoESP.dir/PicoWebServer.c.obj.d"
+  "CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj"
+  "CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
