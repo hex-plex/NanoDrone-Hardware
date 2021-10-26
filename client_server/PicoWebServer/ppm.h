@@ -177,9 +177,9 @@ void ppm_init(){
 }
 
 void parse_input(char* buf){
-  //buf;
-  int i=0, k = 0, j=0;
+  int i=0, j = 0, k = 0;
   int n = strlen(buf);
+  printf("Strlen : %d \n", n);
   while(i<n){
     if(buf[i]=='$')
     {
@@ -188,42 +188,33 @@ void parse_input(char* buf){
     }
     i++;
   }
-//   while(i < n){
-  		
-//     	if(buf[i] == "-"){
-    		
-//     		char str[4];
-//     		while(buf[i] != "-"){
-//     			str[j] = buf[i];
-//     			i++;
-//     			j++;
-// 			}
-//     		int val = atoi(str);
-//     		ppm[k] = val;
-//     		k++;
-// 		}
-// 		i++;
-// 	}
-  for (int j=i;j<n;j+=3 ){
-  
-    char subtext[4];
-
-    memcpy(subtext,&buf[j],3);
-    subtext[3] = '\0';
-    int var = atoi(subtext);
-    if(k<6){
-      ppm[k]=var+1000;
+      
+    while(i < n-1){
+        
+    if((char)buf[i] == '-'){
+        i++;
+        j = 0;
+        char str[5];
+        while((char)buf[i] != '-'){
+            
+            str[j] = (char)buf[i];
+            i++;
+            j++;
+        }
+        str[j] = '\0';
+        int val = atoi(str);
+        //printf("value : %d \n", val);
+        if (k<6){
+        ppm[k] = val+1000;
+        //printf("value set at : %d \n", k);
+        k++;
+        //printf("current index %d\n",i);
+        }
+        
     }
-    else{
-      break;
-    }
-    // printf("\n%d@",var);
-    k++;
     
-
-  }
-
-
 }
+}
+
 
 #endif
