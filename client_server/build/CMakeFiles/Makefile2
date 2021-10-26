@@ -65,35 +65,20 @@ CMAKE_BINARY_DIR = /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/bu
 # The main recursive "all" target.
 all: pico-sdk/all
 all: PicoWebServer/all
-all: InfoFlash/all
+all: wifi_setup/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk/preinstall
 preinstall: PicoWebServer/preinstall
-preinstall: InfoFlash/preinstall
+preinstall: wifi_setup/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: pico-sdk/clean
 clean: PicoWebServer/clean
-clean: InfoFlash/clean
+clean: wifi_setup/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory InfoFlash
-
-# Recursive "all" directory target.
-InfoFlash/all: InfoFlash/CMakeFiles/FlashTest.dir/all
-.PHONY : InfoFlash/all
-
-# Recursive "preinstall" directory target.
-InfoFlash/preinstall:
-.PHONY : InfoFlash/preinstall
-
-# Recursive "clean" directory target.
-InfoFlash/clean: InfoFlash/CMakeFiles/FlashTest.dir/clean
-.PHONY : InfoFlash/clean
 
 #=============================================================================
 # Directory level rules for directory PicoWebServer
@@ -1336,18 +1321,33 @@ pico-sdk/tools/clean:
 .PHONY : pico-sdk/tools/clean
 
 #=============================================================================
+# Directory level rules for directory wifi_setup
+
+# Recursive "all" directory target.
+wifi_setup/all: wifi_setup/CMakeFiles/wifi_setup.dir/all
+.PHONY : wifi_setup/all
+
+# Recursive "preinstall" directory target.
+wifi_setup/preinstall:
+.PHONY : wifi_setup/preinstall
+
+# Recursive "clean" directory target.
+wifi_setup/clean: wifi_setup/CMakeFiles/wifi_setup.dir/clean
+.PHONY : wifi_setup/clean
+
+#=============================================================================
 # Target rules for target pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir
 
 # All Build rule for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=97,98 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=52 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule
@@ -1368,7 +1368,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num= "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=53 "Built target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1394,12 +1394,12 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=99,100 "Built target bs2_default_padded_checksummed_asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=54 "Built target bs2_default_padded_checksummed_asm"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule
@@ -1421,12 +1421,12 @@ PicoWebServer/CMakeFiles/PicoESP.dir/all: pico-sdk/src/rp2_common/boot_stage2/CM
 PicoWebServer/CMakeFiles/PicoESP.dir/all: PicoWebServer/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/depend
 	$(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target PicoESP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target PicoESP"
 .PHONY : PicoWebServer/CMakeFiles/PicoESP.dir/all
 
 # Build rule for subdir invocation for target.
 PicoWebServer/CMakeFiles/PicoESP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PicoWebServer/CMakeFiles/PicoESP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 0
 .PHONY : PicoWebServer/CMakeFiles/PicoESP.dir/rule
@@ -1467,31 +1467,31 @@ PicoWebServer/CMakeFiles/ELF2UF2Build.dir/clean:
 .PHONY : PicoWebServer/CMakeFiles/ELF2UF2Build.dir/clean
 
 #=============================================================================
-# Target rules for target InfoFlash/CMakeFiles/FlashTest.dir
+# Target rules for target wifi_setup/CMakeFiles/wifi_setup.dir
 
 # All Build rule for target.
-InfoFlash/CMakeFiles/FlashTest.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-InfoFlash/CMakeFiles/FlashTest.dir/all: PicoWebServer/CMakeFiles/ELF2UF2Build.dir/all
-	$(MAKE) $(MAKESILENT) -f InfoFlash/CMakeFiles/FlashTest.dir/build.make InfoFlash/CMakeFiles/FlashTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f InfoFlash/CMakeFiles/FlashTest.dir/build.make InfoFlash/CMakeFiles/FlashTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target FlashTest"
-.PHONY : InfoFlash/CMakeFiles/FlashTest.dir/all
+wifi_setup/CMakeFiles/wifi_setup.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+wifi_setup/CMakeFiles/wifi_setup.dir/all: PicoWebServer/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/depend
+	$(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target wifi_setup"
+.PHONY : wifi_setup/CMakeFiles/wifi_setup.dir/all
 
 # Build rule for subdir invocation for target.
-InfoFlash/CMakeFiles/FlashTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 54
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InfoFlash/CMakeFiles/FlashTest.dir/all
+wifi_setup/CMakeFiles/wifi_setup.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 53
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wifi_setup/CMakeFiles/wifi_setup.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles 0
-.PHONY : InfoFlash/CMakeFiles/FlashTest.dir/rule
+.PHONY : wifi_setup/CMakeFiles/wifi_setup.dir/rule
 
 # Convenience name for target.
-FlashTest: InfoFlash/CMakeFiles/FlashTest.dir/rule
-.PHONY : FlashTest
+wifi_setup: wifi_setup/CMakeFiles/wifi_setup.dir/rule
+.PHONY : wifi_setup
 
 # clean rule for target.
-InfoFlash/CMakeFiles/FlashTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f InfoFlash/CMakeFiles/FlashTest.dir/build.make InfoFlash/CMakeFiles/FlashTest.dir/clean
-.PHONY : InfoFlash/CMakeFiles/FlashTest.dir/clean
+wifi_setup/CMakeFiles/wifi_setup.dir/clean:
+	$(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/clean
+.PHONY : wifi_setup/CMakeFiles/wifi_setup.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

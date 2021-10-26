@@ -182,17 +182,17 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
-# Target rules for targets named FlashTest
+# Target rules for targets named wifi_setup
 
 # Build rule for target.
-FlashTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FlashTest
-.PHONY : FlashTest
+wifi_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wifi_setup
+.PHONY : wifi_setup
 
 # fast build rule for target.
-FlashTest/fast:
-	$(MAKE) $(MAKESILENT) -f InfoFlash/CMakeFiles/FlashTest.dir/build.make InfoFlash/CMakeFiles/FlashTest.dir/build
-.PHONY : FlashTest/fast
+wifi_setup/fast:
+	$(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/build
+.PHONY : wifi_setup/fast
 
 # Help Target
 help:
@@ -205,9 +205,9 @@ help:
 	@echo "... ELF2UF2Build"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
-	@echo "... FlashTest"
 	@echo "... PicoESP"
 	@echo "... bs2_default"
+	@echo "... wifi_setup"
 .PHONY : help
 
 

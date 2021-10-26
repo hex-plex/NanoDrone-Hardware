@@ -60,19 +60,22 @@ void fetch_Resp(char* buf, const uint32_t waitTime){
 
 void uart_inp(void){
   //printf("interrupt called");
-  if(read_sync){
+  if(true || read_sync){
     read_sync = false;
     char buf[512] = "";
     fetch_Resp(buf,5000);
     if (strlen(buf)>0){
-      printf("%s",buf);
+      if(DEBUG_PRINT) printf("%s",buf);
       parse_input(buf);
 
     }
-    for (int i=0;i<6;i++){
+    if(DEBUG_PRINT){
+      for (int i=0;i<6;i++){
         printf("%d-",(int32_t)ppm[i]);
+      }
+      printf("\n");
     }
-    printf("\n");
+    
     read_sync = true;
   }
   
@@ -83,11 +86,12 @@ void setup_uart_interrupt(){
   printf("interrupt setup");
   irq_set_exclusive_handler(20, uart_inp);
   irq_set_enabled(20, true);
-  uart_set_irq_enables(uart0, true, true);
+  uart_set_irq_enables(uart0, true, false);
+  printf("%d",irq_is_enabled(20));
 }
 
 void sendCMD_waitResp(const char* cmd,const uint32_t waitTime){
-  printf("CMD: %s",cmd);
+  if(DEBUG_PRINT)printf("CMD: %s",cmd);
     
   int sl = strlen(cmd);
   for(int i=0;i<sl;i++)
@@ -113,7 +117,7 @@ void sendMsg(const char* msg){
   strcat(cmd, msglen);
   for(int i=0;i<sl;i++)
     uart_putc_raw(uart0, cmd[i]);
-  printf("%s",cmd);
+  if(DEBUG_PRINT)printf("%s",cmd);
   uart_putc_raw(uart0, '\r');
   uart_putc_raw(uart0, '\n');
   //uart_puts(uart0, msg);

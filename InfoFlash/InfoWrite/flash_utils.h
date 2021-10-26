@@ -107,6 +107,8 @@ void writeCreds(){
 
 
     flash_range_program(FLASH_TARGET_OFFSET, (uint8_t *)info_set , FLASH_PAGE_SIZE);
+
+    printf("Finished Saving....!");
 }
 
 
