@@ -16,7 +16,7 @@
 
 
 int main() {
- 
+  stdio_init_all();
   stdio_usb_init();
 
   sleep_ms(5000);
@@ -52,12 +52,14 @@ int main() {
   printf("%s",inp_str);
 
   
-  sendCMD_waitResp(inp_str,500000);
+  sendCMD_waitResp(inp_str,50000);
   printf("\nLoopStarts\n");
 
   // gpio_init(LED_PIN);
   // gpio_set_dir(LED_PIN, GPIO_OUT);
-
+  while(true){
+    sleep_ms(10000);
+  }
   
 
   // sendCMD_waitResp("AT+CIPSTART=\"TCP\",\"192.168.1.5\",9999",500000);

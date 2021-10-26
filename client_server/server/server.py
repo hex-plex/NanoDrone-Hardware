@@ -152,7 +152,7 @@ def server_program():
             data += '-' + str(array[i])
         data+='-'
         data += '\r\n'
-        print(data)
+        # print(data)
         conn.send(data.encode())
         # print(data)
         # print("\n")
