@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
+set(PICO_COPY_TO_RAM 1)   ## fixes most of the bugs
 
 include(pico_sdk_import.cmake)
 
@@ -11,3 +12,4 @@ pico_sdk_init()
 
 # Add subdirectories:
 add_subdirectory(PicoWebServer)
+add_subdirectory(InfoFlash)

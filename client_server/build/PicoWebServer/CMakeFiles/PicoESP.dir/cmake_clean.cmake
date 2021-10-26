@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj"
-  "CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
@@ -99,6 +97,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+  "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
@@ -122,6 +122,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
   "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
+  "CMakeFiles/PicoESP.dir/main.cpp.obj"
+  "CMakeFiles/PicoESP.dir/main.cpp.obj.d"
   "PicoESP.elf"
   "PicoESP.pdb"
 )

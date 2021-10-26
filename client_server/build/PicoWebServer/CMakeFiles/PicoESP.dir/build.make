@@ -69,19 +69,19 @@ include PicoWebServer/CMakeFiles/PicoESP.dir/progress.make
 # Include the compile flags for this target's objects.
 include PicoWebServer/CMakeFiles/PicoESP.dir/flags.make
 
-PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj: PicoWebServer/CMakeFiles/PicoESP.dir/flags.make
-PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj: ../PicoWebServer/PicoWebServer.cpp
-PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj: PicoWebServer/CMakeFiles/PicoESP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj"
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj -MF CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj.d -o CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj -c /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.cpp
+PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj: PicoWebServer/CMakeFiles/PicoESP.dir/flags.make
+PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj: ../PicoWebServer/main.cpp
+PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj: PicoWebServer/CMakeFiles/PicoESP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj -MF CMakeFiles/PicoESP.dir/main.cpp.obj.d -o CMakeFiles/PicoESP.dir/main.cpp.obj -c /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/main.cpp
 
-PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PicoESP.dir/PicoWebServer.cpp.i"
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.cpp > CMakeFiles/PicoESP.dir/PicoWebServer.cpp.i
+PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PicoESP.dir/main.cpp.i"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/main.cpp > CMakeFiles/PicoESP.dir/main.cpp.i
 
-PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PicoESP.dir/PicoWebServer.cpp.s"
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.cpp -o CMakeFiles/PicoESP.dir/PicoWebServer.cpp.s
+PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PicoESP.dir/main.cpp.s"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/main.cpp -o CMakeFiles/PicoESP.dir/main.cpp.s
 
 PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: PicoWebServer/CMakeFiles/PicoESP.dir/flags.make
 PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -996,9 +996,23 @@ PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
+PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: PicoWebServer/CMakeFiles/PicoESP.dir/flags.make
+PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: PicoWebServer/CMakeFiles/PicoESP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -c /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+
+PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 # Object files for target PicoESP
 PicoESP_OBJECTS = \
-"CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj" \
+"CMakeFiles/PicoESP.dir/main.cpp.obj" \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -1064,12 +1078,13 @@ PicoESP_OBJECTS = \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+"CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
+"CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target PicoESP
 PicoESP_EXTERNAL_OBJECTS =
 
-PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj
+PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -1136,10 +1151,11 @@ PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/build.make
 PicoWebServer/PicoESP.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 PicoWebServer/PicoESP.elf: PicoWebServer/CMakeFiles/PicoESP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable PicoESP.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable PicoESP.elf"
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PicoESP.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objcopy -Oihex PicoESP.elf PicoESP.hex
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer && /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objcopy -Obinary PicoESP.elf PicoESP.bin

@@ -3,6 +3,10 @@
 #include "hardware/timer.h"
 #include "hardware/gpio.h"
 
+#ifndef __PPM_GEN__
+#define __PPM_GEN__
+
+
 #define CHANNEL_NUMBER 6  //set the number of chanels
 #define FRAME_LENGTH 22500  //set the PPM frame length in microseconds (1ms = 1000µs)
 #define PULSE_LENGTH 300  //set the pulse length
@@ -115,3 +119,64 @@ void setValue(int* inp){
         ppm[i] = inp[i];
     }
 }
+
+
+void callback(){
+    add_alarm_in_us(computed_trans_time/2, alarm_callback, NULL, FALSE);
+    
+
+    while (1)
+        tight_loop_contents();
+}
+
+
+void ppm_init(){
+
+    gpio_init(sigPin);
+    gpio_set_dir(sigPin, GPIO_OUT);
+    for(int i=0; i<CHANNEL_NUMBER; i++){
+        ppm[i]= 1500;
+        
+    }
+    gpio_put(sigPin, offState);
+    computed_trans_time = 100;
+    multicore_launch_core1(callback);
+    //add_alarm_in_us(computed_trans_time/2, alarm_callback, NULL, FALSE);
+
+}
+
+void parse_input(char* buf){
+  //buf;
+  int i=0, k = 0;
+  int n = strlen(buf);
+  while(i<n){
+    if(buf[i]=='$')
+    {
+      i++;
+      break;
+    }
+    i++;
+  }
+  for (int j=i;j<n;j+=3 ){
+  
+    char subtext[4];
+
+    memcpy(subtext,&buf[j],3);
+    subtext[3] = '\0';
+    int var = atoi(subtext);
+    if(k<6){
+      ppm[k]=var+1000;
+    }
+    else{
+      break;
+    }
+    // printf("\n%d@",var);
+    k++;
+    
+
+  }
+
+
+}
+
+#endif

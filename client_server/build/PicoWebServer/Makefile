@@ -144,30 +144,6 @@ ELF2UF2Build/fast:
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build.make PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
-PicoWebServer.obj: PicoWebServer.cpp.obj
-.PHONY : PicoWebServer.obj
-
-# target to build an object file
-PicoWebServer.cpp.obj:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj
-.PHONY : PicoWebServer.cpp.obj
-
-PicoWebServer.i: PicoWebServer.cpp.i
-.PHONY : PicoWebServer.i
-
-# target to preprocess a source file
-PicoWebServer.cpp.i:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.i
-.PHONY : PicoWebServer.cpp.i
-
-PicoWebServer.s: PicoWebServer.cpp.s
-.PHONY : PicoWebServer.s
-
-# target to generate assembly for a file
-PicoWebServer.cpp.s:
-	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.s
-.PHONY : PicoWebServer.cpp.s
-
 home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -1304,6 +1280,30 @@ home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.ob
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
@@ -1576,6 +1576,30 @@ home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/PicoESP.dir/build.make PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1586,9 +1610,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... PicoESP"
-	@echo "... PicoWebServer.obj"
-	@echo "... PicoWebServer.i"
-	@echo "... PicoWebServer.s"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1731,6 +1752,9 @@ help:
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.s"
@@ -1765,6 +1789,9 @@ help:
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

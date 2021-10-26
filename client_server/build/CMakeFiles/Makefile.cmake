@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../InfoFlash/CMakeLists.txt"
   "../PicoWebServer/CMakeLists.txt"
   "CMakeFiles/3.20.4/CMakeASMCompiler.cmake"
   "CMakeFiles/3.20.4/CMakeCCompiler.cmake"
@@ -209,6 +210,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "PicoWebServer/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
   "PicoWebServer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "InfoFlash/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -218,4 +220,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"
   "PicoWebServer/CMakeFiles/PicoESP.dir/DependInfo.cmake"
   "PicoWebServer/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
+  "InfoFlash/CMakeFiles/FlashTest.dir/DependInfo.cmake"
   )

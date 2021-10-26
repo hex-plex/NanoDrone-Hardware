@@ -40,6 +40,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -59,7 +60,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
   "PICO_CMAKE_BUILD_TYPE=\"Release\""
-  "PICO_COPY_TO_RAM=0"
+  "PICO_COPY_TO_RAM=1"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
   "PICO_NO_HARDWARE=0"
@@ -113,6 +114,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/include"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/include"
+  "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 
 # The set of dependency files which are needed:
@@ -161,6 +163,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
+  "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"
@@ -171,8 +174,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
-  "/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/PicoWebServer.cpp" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
+  "/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/main.cpp" "PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj" "gcc" "PicoWebServer/CMakeFiles/PicoESP.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -75,11 +75,18 @@ PicoWebServer/CMakeFiles/PicoESP.dir/PicoWebServer.cpp.obj: \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/PicoWebServer/ppm.h \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
  /opt/gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include/string.h \
  /opt/gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include/sys/_locale.h \
  /opt/gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include/strings.h \
- /opt/gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include/sys/string.h
+ /opt/gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include/sys/string.h \
+ /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h
