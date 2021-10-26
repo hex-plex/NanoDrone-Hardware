@@ -40,8 +40,11 @@ int main() {
 
   sleep_ms(5000);
 
+  // writeCreds();
+  
   fetchCreds();
- 
+
+  
 
   uart_init(uart0, 115200);
   gpio_set_function(0, GPIO_FUNC_UART);
@@ -57,23 +60,17 @@ int main() {
   sendCMD_waitResp("AT",50000);
   sleep_ms(1000);
   
-  //sendCMD_waitResp("AT+CIFSR",50000);
-  //sleep_ms(1000);
-  // sendCMD_waitResp("AT+CWJAP=\"jsparrow_2.4Ghz\",\"happy@123\"",50000);
-  // sleep_ms(5000);
-  // sendCMD_waitResp("AT+CIFSR",50000);
-  // sleep_ms(10000);
-  
 
-  char inp_str[] = "AT+CIPSTART=\"TCP\",\"";
+  char inp_str[MAX_LEN] = "AT+CIPSTART=\"TCP\",\"";
   strcat(inp_str, cred_.server_ip);
   strncat(inp_str, "\",",2);
   strcat(inp_str, cred_.port);
+  printf("%s",inp_str);
 
-  // sendCMD_waitResp(inp_str,500000);
+  sendCMD_waitResp(inp_str,500000);
   
 
-  sendCMD_waitResp("AT+CIPSTART=\"TCP\",\"192.168.1.5\",9999",500000);
+  // sendCMD_waitResp("AT+CIPSTART=\"TCP\",\"192.168.1.5\",9999",500000);
   sleep_ms(10000);
 
   while (true){

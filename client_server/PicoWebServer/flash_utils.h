@@ -31,9 +31,10 @@ void fetchCreds(){
     strcpy(cred_.server_ip, "");
     strcpy(cred_.port, "");
     
-    printf("Fetching info");
+    printf("Fetching info\n");
     for(size_t i=0; i < (size_t)FLASH_PAGE_SIZE; i++){
         if((char)flash_target_contents[i] == '|'){
+            // printf("%c",flash_target_contents[i]);
             if(cnt==0){
                 strncat(cred_.wifi_name, "\0", 1);
             } else if (cnt==1) {
@@ -48,7 +49,7 @@ void fetchCreds(){
             continue;
         }
         
-        printf("%c", flash_target_contents[i]);
+        // printf("%c", flash_target_contents[i]);
 
         if(cnt==0){
             strncat(cred_.wifi_name, (const char *)flash_target_contents+i, 1);
@@ -60,7 +61,7 @@ void fetchCreds(){
             strncat(cred_.port, (const char *)flash_target_contents+i, 1);
         }
     }
-    printf("Info Fetched");
+    printf("Info Fetched\n");
 }
  
 void writeCreds(){
@@ -73,9 +74,10 @@ void writeCreds(){
     strcpy(info_set, ""); 
     printf("Input WifiName, Password, Server IP, Port each in a new line\n");
     char temp_buf[MAX_LEN];
-    int cnt=0;   
-    for(int i=0;i<4;i++){
+    // int cnt=0;   
+    for(int cnt=0;cnt<4;cnt++){
         scanf("%s",temp_buf);
+        // printf("%s",temp_buf);
         if(cnt==0){
             strcat(info_set, temp_buf);
             strncat(info_set, "|", 1);
@@ -93,44 +95,18 @@ void writeCreds(){
             strncat(info_set, "|", 1);
             strcpy(cred_.port, temp_buf);
         }
+        // cnt++;
     }
+    printf("Currently writing your info\n");
+    printf("Wifi Name : %s\n", cred_.wifi_name);
+    printf("Password  : %s\n", cred_.pass);
+    printf("Server IP : %s\n", cred_.server_ip);
+    printf("Port      : %s\n", cred_.port);
+
+
     flash_range_program(FLASH_TARGET_OFFSET, (uint8_t *)info_set , FLASH_PAGE_SIZE);
 }
 
- 
-// int main() {
-//     stdio_usb_init();
-//     uint8_t random_data[FLASH_PAGE_SIZE];
-//     for (int i = 0; i < FLASH_PAGE_SIZE; ++i)
-//         random_data[i] = rand() >> 16;
- 
-//     printf("Generated random data:\n");
-//     print_buf(random_data, FLASH_PAGE_SIZE);
-    
- 
-//     // Note that a whole number of sectors must be erased at a time.
-//     printf("\nErasing target region...\n");
-//     // uint32_t ints = save_and_disable_interrupts();
-//     flash_range_erase(FLASH_TARGET_OFFSET, FLASH_SECTOR_SIZE);
-//     // restore_interrupts(ints);
 
-//     printf("Done. Read back target region:\n");
-//     print_buf(flash_target_contents, FLASH_PAGE_SIZE);
-    
-//     printf("\nProgramming target region...\n");
-//     flash_range_program(FLASH_TARGET_OFFSET, random_data, FLASH_PAGE_SIZE);
-//     printf("Done. Read back target region:\n");
-//     print_buf(flash_target_contents, FLASH_PAGE_SIZE);
- 
-//     bool mismatch = false;
-//     for (int i = 0; i < FLASH_PAGE_SIZE; ++i) {
-//         if (random_data[i] != flash_target_contents[i])
-//             mismatch = true;
-//     }
-//     if (mismatch)
-//         printf("Programming failed!\n");
-//     else
-//         printf("Programming successful!\n");
-// }
 
 #endif
