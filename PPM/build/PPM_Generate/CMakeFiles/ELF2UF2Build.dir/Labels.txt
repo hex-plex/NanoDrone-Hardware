@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/CMakeFiles/ELF2UF2Build
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/CMakeFiles/ELF2UF2Build.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/CMakeFiles/ELF2UF2Build-complete.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/home/hexplex0xff/picodev/NanoDrone-Hardware/PPM/build/PPM_Generate/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
