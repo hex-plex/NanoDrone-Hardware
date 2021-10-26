@@ -158,22 +158,22 @@ void parse_input(char* buf){
     }
     i++;
   }
-  while(i < n){
+//   while(i < n){
   		
-    	if(buf[i] == "-"){
+//     	if(buf[i] == "-"){
     		
-    		char str[4];
-    		while(buf[i] != "-"){
-    			str[j] = buf[i];
-    			i++;
-    			j++;
-			}
-    		int val = atoi(str);
-    		ppm[k] = val;
-    		k++;
-		}
-		i++;
-	}
+//     		char str[4];
+//     		while(buf[i] != "-"){
+//     			str[j] = buf[i];
+//     			i++;
+//     			j++;
+// 			}
+//     		int val = atoi(str);
+//     		ppm[k] = val;
+//     		k++;
+// 		}
+// 		i++;
+// 	}
   for (int j=i;j<n;j+=3 ){
   
     char subtext[4];
