@@ -25,7 +25,7 @@ int main() {
   
   fetchCreds();
 
-  
+  ppm_init();
 
   uart_init(uart0, 115200);
   gpio_set_function(0, GPIO_FUNC_UART);
@@ -36,7 +36,7 @@ int main() {
 
   
 
-  ppm_init();
+  
 
   setup_uart_interrupt();
   

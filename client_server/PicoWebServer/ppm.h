@@ -6,11 +6,12 @@
 #ifndef __PPM_GEN__
 #define __PPM_GEN__
 
-#define DEBUG_PRINT 0
+#define DEBUG_PRINT 1
 
 const uint sleep_cycle_dur = 500;
 const uint wake_cycle_dur = 500;    // Use them to communicate information about the board
-
+const uint uart_rx = 1;
+const uint uart_tx = 2;
 const uint LED_PIN = 25;
 
 #define CHANNEL_NUMBER 6  //set the number of chanels
@@ -21,7 +22,7 @@ const uint LED_PIN = 25;
 #define TRUE 1
 #define FALSE 0  
 
-int channel_default_value = 2000;
+int channel_default_value = 1000;
 
 int sigPin=11;
 
@@ -81,6 +82,8 @@ class PPMGen {
 
 PPMGen::PPMGen(){
     uint mask = 0;
+    mask |= 1u<<(uart_rx);
+    mask |= 1u<<(uart_tx);
     mask |= 1u<<(LED_PIN);
     mask |= 1u<<(sigPin);
     gpio_init_mask(mask);
@@ -100,6 +103,8 @@ PPMGen::PPMGen(int selectPin){
     sigPin = selectPin;
     
     uint mask = 0;
+    mask |= 1u<<(uart_rx);
+    mask |= 1u<<(uart_tx);
     mask |= 1u<<(LED_PIN);
     mask |= 1u<<(sigPin);
     gpio_init_mask(mask);
@@ -160,6 +165,8 @@ void callback(){
 void ppm_init(){
 
     uint mask = 0;
+    mask |= 1u<<(uart_rx);
+    mask |= 1u<<(uart_tx);
     mask |= 1u<<(LED_PIN);
     mask |= 1u<<(sigPin);
     gpio_init_mask(mask);

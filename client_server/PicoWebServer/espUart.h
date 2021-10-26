@@ -60,7 +60,7 @@ void fetch_Resp(char* buf, const uint32_t waitTime){
 
 void uart_inp(void){
   //printf("interrupt called");
-  if(read_sync){
+  if(true || read_sync){
     read_sync = false;
     char buf[512] = "";
     fetch_Resp(buf,5000);
@@ -86,7 +86,8 @@ void setup_uart_interrupt(){
   printf("interrupt setup");
   irq_set_exclusive_handler(20, uart_inp);
   irq_set_enabled(20, true);
-  uart_set_irq_enables(uart0, true, true);
+  uart_set_irq_enables(uart0, true, false);
+  printf("%d",irq_is_enabled(20));
 }
 
 void sendCMD_waitResp(const char* cmd,const uint32_t waitTime){
