@@ -65,14 +65,17 @@ void uart_inp(void){
     char buf[512] = "";
     fetch_Resp(buf,5000);
     if (strlen(buf)>0){
-      printf("%s",buf);
+      if(DEBUG_PRINT) printf("%s",buf);
       parse_input(buf);
 
     }
-    for (int i=0;i<6;i++){
+    if(DEBUG_PRINT){
+      for (int i=0;i<6;i++){
         printf("%d-",(int32_t)ppm[i]);
+      }
+      printf("\n");
     }
-    printf("\n");
+    
     read_sync = true;
   }
   
@@ -87,7 +90,7 @@ void setup_uart_interrupt(){
 }
 
 void sendCMD_waitResp(const char* cmd,const uint32_t waitTime){
-  printf("CMD: %s",cmd);
+  if(DEBUG_PRINT)printf("CMD: %s",cmd);
     
   int sl = strlen(cmd);
   for(int i=0;i<sl;i++)
@@ -113,7 +116,7 @@ void sendMsg(const char* msg){
   strcat(cmd, msglen);
   for(int i=0;i<sl;i++)
     uart_putc_raw(uart0, cmd[i]);
-  printf("%s",cmd);
+  if(DEBUG_PRINT)printf("%s",cmd);
   uart_putc_raw(uart0, '\r');
   uart_putc_raw(uart0, '\n');
   //uart_puts(uart0, msg);
