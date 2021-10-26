@@ -12,4 +12,3 @@ pico_sdk_init()
 
 # Add subdirectories:
 add_subdirectory(PicoWebServer)
-add_subdirectory(InfoFlash)
