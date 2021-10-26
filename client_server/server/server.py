@@ -16,15 +16,16 @@ def server_program():
      conn, address = server_socket.accept()  # accept new connection
      print("Connection from: " + str(address))
      print("\n\n\n\n")
-     print("         w           i")
-     print("       a s d       j k l")
-     print("         x")
+     print("         w              i")
+     print("       a s d   f g    j k l")
+     print("         x              m")
      print("hold the following keys :")
      print("w : throttle up      s : throttle zero        x : throttle up")
      print("a : yaw left         d : yaw right")
      print("i : pitch forward    k : pitch backward")
      print("j : roll left        l : roll right")
-     array =[500, 500, 500, 0, 500, 500]
+     print("f : arm drone        g : disarm")
+     array =[500, 500, 0, 500, 0, 0]
      while True:
         # receive data stream. it won't accept data packet greater than 1024 bytes
 #        data = conn.recv(1024).decode()
@@ -46,7 +47,7 @@ def server_program():
             # #data+='\r\n'
             #conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
-        while keyboard.is_pressed("k"):
+        while keyboard.is_pressed("m"):
             if 0 < array[1] <= 1000:
                 array[1] -= 50
                 print("pitch -> ")
@@ -58,7 +59,7 @@ def server_program():
             # #data+='\r\n'
             # conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
-        while keyboard.is_pressed("j"):
+        while keyboard.is_pressed("l"):
             if 0 <= array[0] < 1000:
                 array[0] += 50
                 print("roll -> ")
@@ -70,7 +71,7 @@ def server_program():
             # #data+='\r\n'
             # conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
-        while keyboard.is_pressed("l"):
+        while keyboard.is_pressed("j"):
             if 0 < array[0] <= 1000:
                 array[0] -= 50
                 print("roll -> ")
@@ -85,10 +86,10 @@ def server_program():
             # time.sleep(0.05)
             
         while keyboard.is_pressed("w"):
-            if 0 <= array[3] < 700:
-                array[3] += 50
+            if 0 <= array[2] < 700:
+                array[2] += 50
                 print("throttle -> ")
-                print(array[3]/10)
+                print(array[2]/10)
                 print("%")
                 print("\n")
                 break
@@ -98,17 +99,17 @@ def server_program():
             # conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
         while keyboard.is_pressed("s"):
-            array[3] = 0
+            array[2] = 0
             print("throttle -> ")
-            print(array[3]/10)
+            print(array[2]/10)
             print("%")
             print("\n")
                 
         while keyboard.is_pressed("x"):
-            if 0 < array[3] <= 1000:
-                array[3] -= 50
+            if 0 < array[2] <= 1000:
+                array[2] -= 50
                 print("throttle -> ")
-                print(array[3]/10)
+                print(array[2]/10)
                 print("%")
                 print("\n")
                 break
@@ -118,10 +119,10 @@ def server_program():
             # conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
         while keyboard.is_pressed("a"):
-            if 0 <= array[2] < 1000:
-                array[2] += 50
+            if 0 <= array[3] < 1000:
+                array[3] += 50
                 print("yaw -> ")
-                print(array[2]/10)
+                print(array[3]/10)
                 print("%")
                 print("\n")
                 break
@@ -131,11 +132,25 @@ def server_program():
             # conn.send(data.encode())  # send data to the client
             # time.sleep(0.05)
         while keyboard.is_pressed("d"):
-            if 0 < array[2] <= 1000:
-                array[2] -= 50
+            if 0 < array[3] <= 1000:
+                array[3] -= 50
                 print("yaw -> ")
-                print(array[2]/10)
+                print(array[3]/10)
                 print("%")
+                print("\n")
+                break
+
+        while keyboard.is_pressed("f"):
+            if 0 <= array[4] <= 500:
+                array[4] = 1000
+                print("Armed !")
+                print("\n")
+                break
+
+        while keyboard.is_pressed("g"):
+            if 1000 >= array[4] > 500:
+                array[4] = 0
+                print("disarmed !")
                 print("\n")
                 break
             # print("yaw right")

@@ -20,8 +20,8 @@ const uint LED_PIN = 25;
 #define TRUE 1
 #define FALSE 0  
 
-int channel_default_value = 1000;
-
+// int channel_default_value = 1000;
+int channel_default_value[CHANNEL_NUMBER] = {1500, 1500, 1000, 1500, 1000, 1000};
 int sigPin=11;
 
 uint32_t computed_trans_time;
@@ -87,7 +87,7 @@ PPMGen::PPMGen(){
     gpio_set_dir(LED_PIN, GPIO_OUT);
     
     for(int i=0; i<CHANNEL_NUMBER; i++){
-        ppm[i]= channel_default_value;
+        ppm[i]= channel_default_value[i];
 	}
     gpio_put(sigPin, offState);
 	computed_trans_time = 100;
@@ -107,7 +107,7 @@ PPMGen::PPMGen(int selectPin){
     
 
     for(int i=0; i<CHANNEL_NUMBER; i++){
-        ppm[i]= channel_default_value;
+        ppm[i]= channel_default_value[i];
 	}
     gpio_put(sigPin, offState);
 	computed_trans_time = 100;
@@ -166,7 +166,7 @@ void ppm_init(){
     gpio_set_dir(LED_PIN, GPIO_OUT);
     
     for(int i=0; i<CHANNEL_NUMBER; i++){
-        ppm[i]= channel_default_value;
+        ppm[i]= channel_default_value[i];
     }
     gpio_put(sigPin, offState);
     computed_trans_time = 100;
