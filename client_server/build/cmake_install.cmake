@@ -41,7 +41,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/pico-sdk/cmake_install.cmake")
   include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/PicoWebServer/cmake_install.cmake")
-  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/InfoFlash/cmake_install.cmake")
 
 endif()
 

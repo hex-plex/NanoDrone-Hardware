@@ -1202,9 +1202,9 @@ Discarded input sections
                 0x0000000000000000        0x1 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_mutex
                 0x0000000000000000        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccHpAiug.o
- .data          0x0000000000000000        0x0 /tmp/ccHpAiug.o
- .bss           0x0000000000000000        0x0 /tmp/ccHpAiug.o
+ .text          0x0000000000000000        0x0 /tmp/ccMAZzdE.o
+ .data          0x0000000000000000        0x0 /tmp/ccMAZzdE.o
+ .bss           0x0000000000000000        0x0 /tmp/ccMAZzdE.o
  .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atoi.o)
@@ -1923,7 +1923,7 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccHpAiug.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccMAZzdE.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2030,7 +2030,7 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
                 0x0000000020000000       0xc0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.text           0x00000000200000c0     0x7288 load address 0x0000000010000300
+.text           0x00000000200000c0     0x7290 load address 0x0000000010000300
                 0x00000000200000c0                __ram_text_start__ = .
  *(.init)
  .init          0x00000000200000c0        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
@@ -2041,609 +2041,610 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
                 0x000000002000010c      0x10c CMakeFiles/PicoESP.dir/main.cpp.obj
                 0x000000002000010c                alarm_callback(long, void*)
  .text._Z8callbackv
-                0x0000000020000218       0x54 CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x0000000020000218       0x58 CMakeFiles/PicoESP.dir/main.cpp.obj
                 0x0000000020000218                callback()
  .text._Z8uart_inpv
-                0x000000002000026c      0x16c CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x000000002000026c                uart_inp()
+                0x0000000020000270      0x16c CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x0000000020000270                uart_inp()
  .text._Z10fetchCredsv
-                0x00000000200003d8       0xe0 CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x00000000200003d8                fetchCreds()
+                0x00000000200003dc       0xe0 CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x00000000200003dc                fetchCreds()
  .text._Z8ppm_initv
-                0x00000000200004b8       0x58 CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x00000000200004b8                ppm_init()
+                0x00000000200004bc       0x58 CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x00000000200004bc                ppm_init()
  .text._Z20setup_uart_interruptv
-                0x0000000020000510       0x4c CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x0000000020000510                setup_uart_interrupt()
+                0x0000000020000514       0x4c CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x0000000020000514                setup_uart_interrupt()
  .text._Z16sendCMD_waitRespPKcm
-                0x000000002000055c       0x54 CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x000000002000055c                sendCMD_waitResp(char const*, unsigned long)
+                0x0000000020000560       0x54 CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x0000000020000560                sendCMD_waitResp(char const*, unsigned long)
  .text.startup.main
-                0x00000000200005b0       0xe8 CMakeFiles/PicoESP.dir/main.cpp.obj
-                0x00000000200005b0                main
+                0x00000000200005b4       0xe8 CMakeFiles/PicoESP.dir/main.cpp.obj
+                0x00000000200005b4                main
  .text.gpio_set_function
-                0x0000000020000698       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000020000698                gpio_set_function
+                0x000000002000069c       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000000002000069c                gpio_set_function
  .text.gpio_init
-                0x00000000200006c8       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000200006c8                gpio_init
+                0x00000000200006cc       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000200006cc                gpio_init
  .text.hw_claim_or_assert
-                0x0000000020000704       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000020000704                hw_claim_or_assert
+                0x0000000020000708       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000020000708                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x000000002000074c       0x9c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x000000002000074c                hw_claim_unused_from_range
+                0x0000000020000750       0x9c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000020000750                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x00000000200007e8       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000200007e8                running_on_fpga
+                0x00000000200007ec       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000200007ec                running_on_fpga
  .text.spin_locks_reset
-                0x00000000200007f8       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000200007f8                spin_locks_reset
+                0x00000000200007fc       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000200007fc                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000020000814       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000020000814                next_striped_spin_lock_num
+                0x0000000020000818       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000020000818                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x000000002000082c       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x000000002000082c                spin_lock_claim_unused
+                0x0000000020000830       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000020000830                spin_lock_claim_unused
  .text.uart_init
-                0x000000002000084c       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x000000002000084c                uart_init
+                0x0000000020000850       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000000020000850                uart_init
  .text.uart_is_readable_within_us
-                0x0000000020000930       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000020000930                uart_is_readable_within_us
+                0x0000000020000934       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000000020000934                uart_is_readable_within_us
  .text.timer_pool_entry_comparator
-                0x0000000020000954       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000954                timer_pool_entry_comparator
+                0x0000000020000958       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000958                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000020000988       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000098c       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x00000000200009b8      0x128 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200009bc      0x128 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x0000000020000ae0      0x108 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000ae4      0x108 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000020000be8      0x1c8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000bec      0x1c8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000020000db0       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000db0                alarm_pool_init_default
+                0x0000000020000db4       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000db4                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000020000e14        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000e14                alarm_pool_get_default
+                0x0000000020000e18        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000e18                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000020000e1c      0x1ac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000e1c                alarm_pool_add_alarm_at
+                0x0000000020000e20      0x1ac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000e20                alarm_pool_add_alarm_at
  .text.sleep_until
-                0x0000000020000fc8       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000fc8                sleep_until
+                0x0000000020000fcc       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000fcc                sleep_until
  .text.sleep_ms
-                0x0000000020001074       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020001074                sleep_ms
+                0x0000000020001078       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001078                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x00000000200010ac       0xd4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000200010ac                best_effort_wfe_or_timeout
+                0x00000000200010b0       0xd4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200010b0                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000020001180       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001184       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000020001238       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020001238                hardware_alarm_claim
+                0x000000002000123c       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000123c                hardware_alarm_claim
  .text.time_us_64
-                0x0000000020001250       0x14 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020001250                time_us_64
+                0x0000000020001254       0x14 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001254                time_us_64
  .text.busy_wait_until
-                0x0000000020001264       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020001264                busy_wait_until
+                0x0000000020001268       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001268                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x0000000020001284       0x8c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020001284                hardware_alarm_set_callback
+                0x0000000020001288       0x8c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001288                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000020001310       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020001310                hardware_alarm_set_target
+                0x0000000020001314       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001314                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x00000000200013f4       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000200013f4                hardware_alarm_cancel
+                0x00000000200013f8       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200013f8                hardware_alarm_cancel
  .text.lock_init
-                0x0000000020001434       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000020001434                lock_init
+                0x0000000020001438       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000020001438                lock_init
  .text.mutex_init
-                0x0000000020001444       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020001444                mutex_init
+                0x0000000020001448       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001448                mutex_init
  .text.recursive_mutex_init
-                0x0000000020001460       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020001460                recursive_mutex_init
+                0x0000000020001464       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001464                recursive_mutex_init
  .text.critical_section_init
-                0x000000002000147c       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x000000002000147c                critical_section_init
+                0x0000000020001480       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000020001480                critical_section_init
  .text.ph_merge_nodes
-                0x0000000020001498       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000002000149c       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000020001500       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000020001500                ph_post_alloc_init
+                0x0000000020001504       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020001504                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x000000002000153c       0x90 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000002000153c                ph_merge_two_pass
+                0x0000000020001540       0x90 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020001540                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000200015cc       0xf8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000200015d0       0xf8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000200016c4      0x13c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000200016c4                ph_remove_head
+                0x00000000200016c8      0x13c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000200016c8                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000020001800       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000020001800                ph_remove_and_free_node
+                0x0000000020001804       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020001804                ph_remove_and_free_node
  .text.runtime_init
-                0x000000002000187c       0xfc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x000000002000187c                runtime_init
- .text.exit     0x0000000020001978        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000020001978                exit
- .text.panic    0x000000002000197c       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x000000002000197c                panic
+                0x0000000020001880       0xfc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000020001880                runtime_init
+ .text.exit     0x000000002000197c        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000002000197c                exit
+ .text.panic    0x0000000020001980       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000020001980                panic
  .text.hard_assertion_failure
-                0x00000000200019ac        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000200019ac                hard_assertion_failure
+                0x00000000200019b0        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000200019b0                hard_assertion_failure
  .text.clocks_init
-                0x00000000200019b8      0x2bc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000200019b8                clocks_init
+                0x00000000200019bc      0x2bc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000200019bc                clocks_init
  .text.clock_get_hz
-                0x0000000020001c74        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000020001c74                clock_get_hz
+                0x0000000020001c78        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000020001c78                clock_get_hz
  .text.irq_set_enabled
-                0x0000000020001c80       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001c80                irq_set_enabled
+                0x0000000020001c84       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001c84                irq_set_enabled
  .text.irq_is_enabled
-                0x0000000020001ca4       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001ca4                irq_is_enabled
+                0x0000000020001ca8       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001ca8                irq_is_enabled
  .text.irq_set_pending
-                0x0000000020001cbc       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001cbc                irq_set_pending
+                0x0000000020001cc0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001cc0                irq_set_pending
  .text.irq_get_vtable_handler
-                0x0000000020001ccc       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001ccc                irq_get_vtable_handler
+                0x0000000020001cd0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001cd0                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000020001cdc       0x54 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001cdc                irq_set_exclusive_handler
+                0x0000000020001ce0       0x54 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001ce0                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x0000000020001d30      0x1b8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001d30                irq_remove_handler
+                0x0000000020001d34      0x1b8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001d34                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000020001ee8       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001ee8                irq_add_tail_to_free_list
+                0x0000000020001eec       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001eec                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000020001fa0       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020001fa0                irq_init_priorities
+                0x0000000020001fa4       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001fa4                irq_init_priorities
  .text.pll_init
-                0x0000000020001fd8       0xa4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000020001fd8                pll_init
+                0x0000000020001fdc       0xa4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000020001fdc                pll_init
  .text.watchdog_start_tick
-                0x000000002000207c       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x000000002000207c                watchdog_start_tick
+                0x0000000020002080       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000020002080                watchdog_start_tick
  .text.watchdog_reboot
-                0x000000002000208c       0x98 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x000000002000208c                watchdog_reboot
+                0x0000000020002090       0x98 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000020002090                watchdog_reboot
  .text.xosc_init
-                0x0000000020002124       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000020002124                xosc_init
+                0x0000000020002128       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000020002128                xosc_init
  .text._out_null
-                0x000000002000214c        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020002150        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000020002150       0xd0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020002154       0xd0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000020002220      0x1d0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020002224      0x1d0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x00000000200023f0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000200023f4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000020002400       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000020002410      0x478 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000020002888      0x3e0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020002404       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000020002414      0x478 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x000000002000288c      0x3e0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000020002c68      0xb08 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020002c6c      0xb08 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x0000000020003770       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000020003770                vfctprintf
+                0x0000000020003774       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020003774                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000020003790       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000020003790                weak_raw_vprintf
- .text          0x00000000200037c0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020003794       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020003794                weak_raw_vprintf
+ .text          0x00000000200037c4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000200037d0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000200037d0                rom_func_lookup
+                0x00000000200037d4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200037d4                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000200037e0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000200037e0                rom_data_lookup
+                0x00000000200037e4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200037e4                rom_data_lookup
  .text.rom_funcs_lookup
-                0x00000000200037f0       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000200037f0                rom_funcs_lookup
+                0x00000000200037f4       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200037f4                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x000000002000382c       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000002000382c                __wrap___aeabi_idivmod
-                0x000000002000382c                divmod_s32s32
-                0x000000002000382c                div_s32s32
-                0x000000002000382c                __wrap___aeabi_idiv
-                0x0000000020003834                divmod_s32s32_unsafe
-                0x0000000020003860                divmod_s32s32_savestate
+                0x0000000020003830       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000020003830                __wrap___aeabi_idivmod
+                0x0000000020003830                divmod_s32s32
+                0x0000000020003830                div_s32s32
+                0x0000000020003830                __wrap___aeabi_idiv
+                0x0000000020003838                divmod_s32s32_unsafe
+                0x0000000020003864                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x000000002000387c       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000002000387c                __wrap___aeabi_uidiv
-                0x000000002000387c                __wrap___aeabi_uidivmod
-                0x000000002000387c                div_u32u32
-                0x000000002000387c                divmod_u32u32
-                0x0000000020003884                divmod_u32u32_unsafe
-                0x00000000200038ac                divmod_u32u32_savestate
+                0x0000000020003880       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000020003880                __wrap___aeabi_uidiv
+                0x0000000020003880                __wrap___aeabi_uidivmod
+                0x0000000020003880                div_u32u32
+                0x0000000020003880                divmod_u32u32
+                0x0000000020003888                divmod_u32u32_unsafe
+                0x00000000200038b0                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x00000000200038c8      0x430 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000200038c8                div_s64s64
-                0x00000000200038c8                divmod_s64s64
-                0x00000000200038c8                __wrap___aeabi_ldivmod
-                0x0000000020003900                div_u64u64
-                0x0000000020003900                divmod_u64u64
-                0x0000000020003900                __wrap___aeabi_uldivmod
-                0x0000000020003910                divmod_u64u64_savestate
-                0x0000000020003938                divmod_s64s64_unsafe
-                0x00000000200039c0                divmod_u64u64_unsafe
+                0x00000000200038cc      0x430 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000200038cc                div_s64s64
+                0x00000000200038cc                divmod_s64s64
+                0x00000000200038cc                __wrap___aeabi_ldivmod
+                0x0000000020003904                div_u64u64
+                0x0000000020003904                divmod_u64u64
+                0x0000000020003904                __wrap___aeabi_uldivmod
+                0x0000000020003914                divmod_u64u64_savestate
+                0x000000002000393c                divmod_s64s64_unsafe
+                0x00000000200039c4                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000020003cf8       0x80 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003cf8                __wrap___aeabi_drsub
-                0x0000000020003cfe                __wrap___aeabi_dsub
-                0x0000000020003d10                __wrap___aeabi_dadd
-                0x0000000020003d22                __wrap___aeabi_ddiv
-                0x0000000020003d5e                __wrap___aeabi_dmul
+                0x0000000020003cfc       0x80 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003cfc                __wrap___aeabi_drsub
+                0x0000000020003d02                __wrap___aeabi_dsub
+                0x0000000020003d14                __wrap___aeabi_dadd
+                0x0000000020003d26                __wrap___aeabi_ddiv
+                0x0000000020003d62                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000020003d78       0x6c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003d78                __wrap___aeabi_cdrcmple
-                0x0000000020003d88                __wrap___aeabi_cdcmple
-                0x0000000020003d88                __wrap___aeabi_cdcmpeq
+                0x0000000020003d7c       0x6c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003d7c                __wrap___aeabi_cdrcmple
+                0x0000000020003d8c                __wrap___aeabi_cdcmple
+                0x0000000020003d8c                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000020003de4        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003de4                __wrap___aeabi_dcmplt
+                0x0000000020003de8        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003de8                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000020003df0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003df0                __wrap___aeabi_dcmple
+                0x0000000020003df4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003df4                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000020003e00       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003e00                __wrap___aeabi_dcmpge
+                0x0000000020003e04       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003e04                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000020003e10        0xa CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003e10                __wrap___aeabi_dcmpgt
+                0x0000000020003e14        0xa CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003e14                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000020003e1a       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003e1a                __wrap___aeabi_dcmpun
- *fill*         0x0000000020003e36        0x2 
+                0x0000000020003e1e       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003e1e                __wrap___aeabi_dcmpun
+ *fill*         0x0000000020003e3a        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000020003e38       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003e38                __wrap___aeabi_ui2d
-                0x0000000020003e40                __wrap___aeabi_i2d
+                0x0000000020003e3c       0x38 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003e3c                __wrap___aeabi_ui2d
+                0x0000000020003e44                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000020003e70       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003e70                __wrap___aeabi_d2iz
-                0x0000000020003e70                double2int_z
+                0x0000000020003e74       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003e74                __wrap___aeabi_d2iz
+                0x0000000020003e74                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000020003eb8       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000020003eb8                double2uint
-                0x0000000020003eb8                __wrap___aeabi_d2uiz
+                0x0000000020003ebc       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020003ebc                double2uint
+                0x0000000020003ebc                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000020003ed0       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020003ed0                __aeabi_double_init
+                0x0000000020003ed4       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020003ed4                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000020003f7c       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020003f7c                double_table_shim_on_use_helper
+                0x0000000020003f80       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020003f80                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000020003fa8       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020003fa8                drsub_shim
-                0x0000000020003fae                dsub_shim
+                0x0000000020003fac       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020003fac                drsub_shim
+                0x0000000020003fb2                dsub_shim
  .text.dadd_shim
-                0x0000000020003fb8      0x15c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020003fb8                dadd_shim
+                0x0000000020003fbc      0x15c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020003fbc                dadd_shim
  .text.dmul_shim
-                0x0000000020004114      0x15c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020004114                dmul_shim
+                0x0000000020004118      0x15c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020004118                dmul_shim
  .text.ddiv_shim
-                0x0000000020004270      0x1b0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020004270                ddiv_shim
+                0x0000000020004274      0x1b0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020004274                ddiv_shim
  .text.dcordic_rot_step
-                0x0000000020004420       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020004420                dcordic_rot_step
+                0x0000000020004424       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020004424                dcordic_rot_step
  .text.double2uint_shim
-                0x000000002000449c        0xe CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000002000449c                double2uint_shim
-                0x000000002000449e                double2ufix_shim
- *fill*         0x00000000200044aa        0x2 
+                0x00000000200044a0        0xe CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000200044a0                double2uint_shim
+                0x00000000200044a2                double2ufix_shim
+ *fill*         0x00000000200044ae        0x2 
  .text.double2uint64_shim
-                0x00000000200044ac       0x6c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000200044ac                double2uint64_shim
-                0x00000000200044ae                double2ufix64_shim
-                0x00000000200044c8                d2fix_a
+                0x00000000200044b0       0x6c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000200044b0                double2uint64_shim
+                0x00000000200044b2                double2ufix64_shim
+                0x00000000200044cc                d2fix_a
  .text.dunpacks
-                0x0000000020004518       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020004518                dunpacks
+                0x000000002000451c       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000002000451c                dunpacks
  .text.__aeabi_lmul
-                0x0000000020004554       0x32 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000020004554                __wrap___aeabi_lmul
- *fill*         0x0000000020004586        0x2 
+                0x0000000020004558       0x32 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000020004558                __wrap___aeabi_lmul
+ *fill*         0x000000002000458a        0x2 
  .text.__aeabi_float_init
-                0x0000000020004588       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020004588                __aeabi_float_init
+                0x000000002000458c       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000002000458c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000200045ec       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000200045ec                float_table_shim_on_use_helper
- .text          0x0000000020004618       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020004618                __aeabi_mem_init
- .text.memset   0x0000000020004628        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020004628                __wrap_memset
- .text.memcpy   0x0000000020004634        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020004634                __wrap___aeabi_memcpy
-                0x0000000020004634                __wrap_memcpy
+                0x00000000200045f0       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000200045f0                float_table_shim_on_use_helper
+ .text          0x000000002000461c       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000002000461c                __aeabi_mem_init
+ .text.memset   0x000000002000462c        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000002000462c                __wrap_memset
+ .text.memcpy   0x0000000020004638        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020004638                __wrap___aeabi_memcpy
+                0x0000000020004638                __wrap_memcpy
  .text.stdio_out_chars_crlf.part.0
-                0x0000000020004640       0x84 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020004644       0x84 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x00000000200046c4       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000200046c8       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x000000002000473c      0x100 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020004740      0x100 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x000000002000483c       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000002000483c                __wrap_putchar
+                0x0000000020004840       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020004840                __wrap_putchar
  .text.__wrap_puts
-                0x0000000020004858       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020004858                __wrap_puts
+                0x000000002000485c       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000002000485c                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000020004894       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020004894                stdio_set_driver_enabled
+                0x0000000020004898       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020004898                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x00000000200048d0       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000200048d0                __wrap_vprintf
+                0x00000000200048d4       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000200048d4                __wrap_vprintf
  .text.__wrap_printf
-                0x00000000200049bc       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000200049bc                __wrap_printf
+                0x00000000200049c0       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000200049c0                __wrap_printf
  .text.resetd_init
-                0x00000000200049d4        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000200049d8        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x00000000200049d8        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000200049dc        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x00000000200049e4       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000200049e8       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000020004a0c        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020004a10        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000020004a10       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020004a14       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000020004a74        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000020004a74                usbd_app_driver_get_cb
+                0x0000000020004a78        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020004a78                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000020004a80       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000020004a80                tud_cdc_line_coding_cb
+                0x0000000020004a84       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020004a84                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000020004ab4       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000020004ab4                stdio_usb_in_chars
+                0x0000000020004ab8       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020004ab8                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000020004b1c       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020004b20       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000020004c08       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020004c0c       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000020004c18       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020004c1c       0x24 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x0000000020004c3c       0x90 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000020004c3c                stdio_usb_init
+                0x0000000020004c40       0x90 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020004c40                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000020004ccc        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000020004ccc                tud_descriptor_device_cb
+                0x0000000020004cd0        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000020004cd0                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000020004cd4        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000020004cd4                tud_descriptor_configuration_cb
+                0x0000000020004cd8        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000020004cd8                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000020004cdc       0x70 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000020004cdc                tud_descriptor_string_cb
+                0x0000000020004ce0       0x70 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000020004ce0                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x0000000020004d4c      0x148 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004d50      0x148 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x0000000020004e94        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004e94                dcd_int_enable
+                0x0000000020004e98        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004e98                dcd_int_enable
  .text.dcd_set_address
-                0x0000000020004ea0       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004ea0                dcd_set_address
+                0x0000000020004ea4       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004ea4                dcd_set_address
  .text.dcd_connect
-                0x0000000020004ec8       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004ec8                dcd_connect
+                0x0000000020004ecc       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004ecc                dcd_connect
  .text.dcd_init
-                0x0000000020004ed8       0xa0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004ed8                dcd_init
+                0x0000000020004edc       0xa0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004edc                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000020004f78       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004f78                dcd_edpt0_status_complete
+                0x0000000020004f7c       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004f7c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000020004fa8      0x130 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020004fa8                dcd_edpt_open
+                0x0000000020004fac      0x130 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020004fac                dcd_edpt_open
  .text.dcd_edpt_xfer
-                0x00000000200050d8       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000200050d8                dcd_edpt_xfer
+                0x00000000200050dc       0x28 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000200050dc                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000020005100       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020005100                dcd_edpt_stall
+                0x0000000020005104       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020005104                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000020005148       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000020005148                dcd_edpt_clear_stall
+                0x000000002000514c       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000002000514c                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0
-                0x0000000020005190       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020005194       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x00000000200051b0       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000200051b0                rp2040_usb_init
+                0x00000000200051b4       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000200051b4                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x0000000020005200        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020005200                hw_endpoint_reset_transfer
+                0x0000000020005204        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020005204                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x000000002000520c       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000002000520c                _hw_endpoint_buffer_control_update32
+                0x0000000020005210       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020005210                _hw_endpoint_buffer_control_update32
  .text._hw_endpoint_xfer_continue
-                0x000000002000524c      0x104 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000002000524c                _hw_endpoint_xfer_continue
+                0x0000000020005250      0x104 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020005250                _hw_endpoint_xfer_continue
  .text._hw_endpoint_xfer
-                0x0000000020005350       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020005350                _hw_endpoint_xfer
+                0x0000000020005354       0xac CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020005354                _hw_endpoint_xfer
  .text.tud_mounted
-                0x00000000200053fc       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000200053fc                tud_mounted
+                0x0000000020005400       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005400                tud_mounted
  .text.tud_suspended
-                0x000000002000540c       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000002000540c                tud_suspended
+                0x0000000020005410       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005410                tud_suspended
  .text.tud_inited
-                0x000000002000541c        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000002000541c                tud_inited
+                0x0000000020005420        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005420                tud_inited
  .text.tud_init
-                0x0000000020005428       0xd8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005428                tud_init
+                0x000000002000542c       0xd8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000542c                tud_init
  .text.tud_task
-                0x0000000020005500      0x7f8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005500                tud_task
+                0x0000000020005504      0x7f8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005504                tud_task
  .text.dcd_event_bus_signal
-                0x0000000020005cf8       0xe8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005cf8                dcd_event_bus_signal
+                0x0000000020005cfc       0xe8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005cfc                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x0000000020005de0       0x54 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005de0                dcd_event_bus_reset
+                0x0000000020005de4       0x54 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005de4                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x0000000020005e34       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005e34                dcd_event_setup_received
+                0x0000000020005e38       0x50 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005e38                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x0000000020005e84       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005e84                dcd_event_xfer_complete
+                0x0000000020005e88       0x68 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005e88                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x0000000020005eec       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005eec                usbd_open_edpt_pair
+                0x0000000020005ef0       0xe4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005ef0                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x0000000020005fd0       0xa8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020005fd0                usbd_edpt_open
+                0x0000000020005fd4       0xa8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020005fd4                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000020006078       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020006078                usbd_edpt_claim
+                0x000000002000607c       0x64 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000607c                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x00000000200060dc       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000200060dc                usbd_edpt_release
+                0x00000000200060e0       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000200060e0                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000020006128       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020006128                usbd_edpt_xfer
+                0x000000002000612c       0x48 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000612c                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000020006170       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000020006170                tud_control_status
+                0x0000000020006174       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020006174                tud_control_status
  .text.tud_control_xfer
-                0x00000000200061a0       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000200061a0                tud_control_xfer
+                0x00000000200061a4       0xb8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000200061a4                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000020006258       0x14 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000020006258                usbd_control_reset
+                0x000000002000625c       0x14 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000002000625c                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x000000002000626c        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000002000626c                usbd_control_set_complete_callback
+                0x0000000020006270        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020006270                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000020006278       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000020006278                usbd_control_set_request
+                0x000000002000627c       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000002000627c                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000020006294       0xf8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000020006294                usbd_control_xfer_cb
+                0x0000000020006298       0xf8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020006298                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x000000002000638c       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000002000638c                tud_cdc_n_connected
+                0x0000000020006390       0x30 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000020006390                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x00000000200063bc       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000200063bc                tud_cdc_n_available
+                0x00000000200063c0       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200063c0                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x00000000200063d4       0x70 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000200063d4                tud_cdc_n_read
+                0x00000000200063d8       0x70 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200063d8                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000020006444       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000020006444                tud_cdc_n_write_flush
+                0x0000000020006448       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000020006448                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x00000000200064bc       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000200064bc                tud_cdc_n_write
+                0x00000000200064c0       0x34 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200064c0                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x00000000200064f0       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000200064f0                tud_cdc_n_write_available
+                0x00000000200064f4       0x18 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200064f4                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000020006508       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000020006508                cdcd_init
+                0x000000002000650c       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000002000650c                cdcd_init
  .text.cdcd_reset
-                0x0000000020006584       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000020006584                cdcd_reset
+                0x0000000020006588       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000020006588                cdcd_reset
  .text.cdcd_open
-                0x00000000200065b0       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000200065b0                cdcd_open
+                0x00000000200065b4       0xec CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200065b4                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x000000002000669c       0xe0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000002000669c                cdcd_control_xfer_cb
+                0x00000000200066a0       0xe0 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200066a0                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x000000002000677c      0x198 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000002000677c                cdcd_xfer_cb
+                0x0000000020006780      0x198 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000020006780                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000020006914        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000020006914                tusb_init
+                0x0000000020006918        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000020006918                tusb_init
  .text.tusb_inited
-                0x0000000020006920        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000020006920                tusb_inited
+                0x0000000020006924        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000020006924                tusb_inited
  .text.tu_fifo_config
-                0x0000000020006928       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006928                tu_fifo_config
+                0x000000002000692c       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000002000692c                tu_fifo_config
  .text.tu_fifo_count
-                0x00000000200069a0       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000200069a0                tu_fifo_count
+                0x00000000200069a4       0x20 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000200069a4                tu_fifo_count
  .text.tu_fifo_empty
-                0x00000000200069c0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000200069c0                tu_fifo_empty
+                0x00000000200069c4       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000200069c4                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x00000000200069d0       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000200069d0                tu_fifo_remaining
+                0x00000000200069d4       0x1c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000200069d4                tu_fifo_remaining
  .text.tu_fifo_read
-                0x00000000200069ec       0x9c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000200069ec                tu_fifo_read
+                0x00000000200069f0       0x9c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000200069f0                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000020006a88       0xfc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006a88                tu_fifo_read_n
+                0x0000000020006a8c       0xfc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000020006a8c                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000020006b84       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006b84                tu_fifo_write
+                0x0000000020006b88       0x78 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000020006b88                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000020006bfc      0x118 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006bfc                tu_fifo_write_n
+                0x0000000020006c00      0x118 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000020006c00                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000020006d14       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006d14                tu_fifo_clear
+                0x0000000020006d18       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000020006d18                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000020006d60       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000020006d60                tu_fifo_set_overwritable
+                0x0000000020006d64       0x3c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000020006d64                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000020006d9c       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020006da0       0x10 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000020006dac      0x1bc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000020006dac                pico_get_unique_board_id_string
+                0x0000000020006db0      0x1bc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020006db0                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000020006f68       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000020006f68                flash_get_unique_id
+                0x0000000020006f6c       0x40 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020006f6c                flash_get_unique_id
  .text.core1_trampoline
-                0x0000000020006fa8        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000020006fac        0x4 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x0000000020006fac        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000020006fac                core1_wrapper
+                0x0000000020006fb0        0xc CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000020006fb0                core1_wrapper
  .text.multicore_launch_core1_raw
-                0x0000000020006fb8       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000020006fb8                multicore_launch_core1_raw
+                0x0000000020006fbc       0x7c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000020006fbc                multicore_launch_core1_raw
  .text.multicore_launch_core1
-                0x0000000020007034       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000020007034                multicore_launch_core1
- .text          0x0000000020007080        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x0000000020007080                __aeabi_ldiv0
-                0x0000000020007080                __aeabi_idiv0
- .text.atoi     0x0000000020007084        0xc /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atoi.o)
-                0x0000000020007084                atoi
- .text.stpcpy   0x0000000020007090       0x4c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-stpcpy.o)
-                0x0000000020007090                stpcpy
- .text.strcpy   0x00000000200070dc       0x10 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
-                0x00000000200070dc                strcpy
- .text.strlen   0x00000000200070ec       0x5c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000200070ec                strlen
- .text.strncat  0x0000000020007148       0x68 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strncat.o)
-                0x0000000020007148                strncat
+                0x0000000020007038       0x4c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000020007038                multicore_launch_core1
+ .text          0x0000000020007084        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000020007084                __aeabi_ldiv0
+                0x0000000020007084                __aeabi_idiv0
+ .text.atoi     0x0000000020007088        0xc /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atoi.o)
+                0x0000000020007088                atoi
+ .text.stpcpy   0x0000000020007094       0x4c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-stpcpy.o)
+                0x0000000020007094                stpcpy
+ .text.strcpy   0x00000000200070e0       0x10 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+                0x00000000200070e0                strcpy
+ .text.strlen   0x00000000200070f0       0x5c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000200070f0                strlen
+ .text.strncat  0x000000002000714c       0x68 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strncat.o)
+                0x000000002000714c                strncat
  .text._strtol_l.isra.0
-                0x00000000200071b0      0x160 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strtol.o)
- .text.strtol   0x0000000020007310       0x18 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strtol.o)
-                0x0000000020007310                strtol
- .text.__errno  0x0000000020007328        0xc /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-errno.o)
-                0x0000000020007328                __errno
+                0x00000000200071b4      0x160 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strtol.o)
+ .text.strtol   0x0000000020007314       0x18 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strtol.o)
+                0x0000000020007314                strtol
+ .text.__errno  0x000000002000732c        0xc /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-errno.o)
+                0x000000002000732c                __errno
  *(.fini)
- .fini          0x0000000020007334        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000020007334                _fini
- .fini.__stub   0x0000000020007338       0x10 linker stubs
+ .fini          0x0000000020007338        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000020007338                _fini
+ *fill*         0x000000002000733c        0x4 
+ .fini.__stub   0x0000000020007340       0x10 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2655,30 +2656,30 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000020007348        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000020007348                . = ALIGN (0x4)
-                0x0000000020007348                __ram_text_end__ = .
+ .eh_frame      0x0000000020007350        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020007350                . = ALIGN (0x4)
+                0x0000000020007350                __ram_text_end__ = .
                 0x0000000010000300                __ram_text_source__ = LOADADDR (.text)
 
-.glue_7         0x0000000020007348        0x0 load address 0x0000000010007588
- .glue_7        0x0000000020007348        0x0 linker stubs
+.glue_7         0x0000000020007350        0x0 load address 0x0000000010007590
+ .glue_7        0x0000000020007350        0x0 linker stubs
 
-.glue_7t        0x0000000020007348        0x0 load address 0x0000000010007588
- .glue_7t       0x0000000020007348        0x0 linker stubs
+.glue_7t        0x0000000020007350        0x0 load address 0x0000000010007590
+ .glue_7t       0x0000000020007350        0x0 linker stubs
 
-.vfp11_veneer   0x0000000020007348        0x0 load address 0x0000000010007588
- .vfp11_veneer  0x0000000020007348        0x0 linker stubs
+.vfp11_veneer   0x0000000020007350        0x0 load address 0x0000000010007590
+ .vfp11_veneer  0x0000000020007350        0x0 linker stubs
 
-.v4_bx          0x0000000020007348        0x0 load address 0x0000000010007588
- .v4_bx         0x0000000020007348        0x0 linker stubs
+.v4_bx          0x0000000020007350        0x0 load address 0x0000000010007590
+ .v4_bx         0x0000000020007350        0x0 linker stubs
 
-.iplt           0x0000000020007348        0x0 load address 0x0000000010007588
- .iplt          0x0000000020007348        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000020007350        0x0 load address 0x0000000010007590
+ .iplt          0x0000000020007350        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rel.dyn        0x0000000020007348        0x0 load address 0x0000000010007588
- .rel.iplt      0x0000000020007348        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000020007350        0x0 load address 0x0000000010007590
+ .rel.iplt      0x0000000020007350        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.data           0x0000000020007350      0xf78 load address 0x0000000010007588
+.data           0x0000000020007350      0xf78 load address 0x0000000010007590
                 0x0000000020007350                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2864,29 +2865,29 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
  *(.jcr)
                 0x00000000200082c8                . = ALIGN (0x4)
                 0x00000000200082c8                __data_end__ = .
-                0x0000000010007588                __etext = LOADADDR (.data)
+                0x0000000010007590                __etext = LOADADDR (.data)
 
-.igot.plt       0x00000000200082c8        0x0 load address 0x0000000010008500
+.igot.plt       0x00000000200082c8        0x0 load address 0x0000000010008508
  .igot.plt      0x00000000200082c8        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200082c8        0x0 load address 0x0000000010008500
+                0x00000000200082c8        0x0 load address 0x0000000010008508
                 0x00000000200082c8                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008500
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008508
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010008500                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010008508                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008500
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008508
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010008500                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010008508                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x00000000200082c8     0x10e8
                 0x00000000200082c8                . = ALIGN (0x4)
@@ -3013,8 +3014,8 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010008500        0x0
-                0x0000000010008500                __flash_binary_end = .
+.flash_end      0x0000000010008508        0x0
+                0x0000000010008508                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3091,7 +3092,7 @@ LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pic
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /tmp/ccHpAiug.o
+LOAD /tmp/ccMAZzdE.o
 LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3211,7 +3212,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000800       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x000000000000082c       0x22 /tmp/ccHpAiug.o
+                0x000000000000082c       0x22 /tmp/ccMAZzdE.o
  .ARM.attributes
                 0x000000000000084e       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

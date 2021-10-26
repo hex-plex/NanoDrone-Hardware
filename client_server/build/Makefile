@@ -181,19 +181,6 @@ ELF2UF2Build/fast:
 	$(MAKE) $(MAKESILENT) -f PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build.make PicoWebServer/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
-#=============================================================================
-# Target rules for targets named FlashTest
-
-# Build rule for target.
-FlashTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FlashTest
-.PHONY : FlashTest
-
-# fast build rule for target.
-FlashTest/fast:
-	$(MAKE) $(MAKESILENT) -f InfoFlash/CMakeFiles/FlashTest.dir/build.make InfoFlash/CMakeFiles/FlashTest.dir/build
-.PHONY : FlashTest/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,7 +192,6 @@ help:
 	@echo "... ELF2UF2Build"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
-	@echo "... FlashTest"
 	@echo "... PicoESP"
 	@echo "... bs2_default"
 .PHONY : help

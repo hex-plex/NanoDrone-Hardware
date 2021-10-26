@@ -122,11 +122,12 @@ void setValue(int* inp){
 
 
 void callback(){
+    int32_t alrm_id = alarm_pool_create()
     add_alarm_in_us(computed_trans_time/2, alarm_callback, NULL, FALSE);
     
 
-    while (1)
-        tight_loop_contents();
+    // while (1)
+    //     tight_loop_contents();
 }
 
 
@@ -136,7 +137,6 @@ void ppm_init(){
     gpio_set_dir(sigPin, GPIO_OUT);
     for(int i=0; i<CHANNEL_NUMBER; i++){
         ppm[i]= 1500;
-        
     }
     gpio_put(sigPin, offState);
     computed_trans_time = 100;
