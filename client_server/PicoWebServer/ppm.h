@@ -122,9 +122,10 @@ void setValue(int* inp){
 
 
 void callback(){
-    add_alarm_in_us(computed_trans_time/2, alarm_callback, NULL, FALSE);
+    int32_t pool_val = alarm_pool_create(1,1);
     
-
+    alarm_pool_add_alarm_in_us(pool_val,computed_trans_time/2, alarm_callback, NULL, FALSE);
+    
     while (1)
         tight_loop_contents();
 }
@@ -147,7 +148,7 @@ void ppm_init(){
 
 void parse_input(char* buf){
   //buf;
-  int i=0, k = 0;
+  int i=0, k = 0, j=0;
   int n = strlen(buf);
   while(i<n){
     if(buf[i]=='$')
@@ -157,6 +158,22 @@ void parse_input(char* buf){
     }
     i++;
   }
+  while(i < n){
+  		
+    	if(buf[i] == "-"){
+    		
+    		char str[4];
+    		while(buf[i] != "-"){
+    			str[j] = buf[i];
+    			i++;
+    			j++;
+			}
+    		int val = atoi(str);
+    		ppm[k] = val;
+    		k++;
+		}
+		i++;
+	}
   for (int j=i;j<n;j+=3 ){
   
     char subtext[4];
