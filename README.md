@@ -1,6 +1,9 @@
 # NanoDrone-Hardware
 Contains files for the firmware and hardware for NanoDrones
 
+## Circuit Board
+![](circuit.png)
+
 #Instructions
 
 - 1. Use `FlashWrite.uf2` file in the `bin/` folder and input your Wifi credentials and Server Ip with port number all of them input with a enter or new line folloiwing those. This should be done through minicom or any similar serial interface
