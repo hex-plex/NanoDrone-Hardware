@@ -86,7 +86,7 @@ def server_program():
             # time.sleep(0.05)
             
         while keyboard.is_pressed("w"):
-            if 0 <= array[2] < 700:
+            if 0 <= array[2] < 1000:
                 array[2] += 50
                 print("throttle -> ")
                 print(array[2]/10)
