@@ -8,6 +8,8 @@ For the current approach we are using [`F3 Evo`](https://robu.in/product/f3-evo-
 
 ### Drone In Action
 
+[] Mostly add a gif of the donre being controlled in mid air
+
 ## Implementation
 Below I have explained about the Modifications only
 ### Circuit Board
