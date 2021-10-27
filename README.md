@@ -39,3 +39,25 @@ This has its PPM cycles run by which this core is isolated from every other proc
 - 3. Use the `PicoESP.uf2` file in the `bin/` folder and connect the pin number `GPIO-11` to the UART 2 RX of the F3 flight controller. you may choose to power the pico board using a external regulator or the onboard power distribution. There you go you have everything running.
 
 For running this launch the `server.py` or the joystick based server, now connect the pico to the drone and this should launch a controller like layout on your terminal now **Press 'F' to pay respects** and arm the drone. Use the joystick wisely.
+
+
+## Contributors and Maintainers
+
+<table>
+ <td align="center">
+     <a href="https://github.com/hex-plex">
+    <img src="https://avatars0.githubusercontent.com/u/56990337?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Somnath Sendhil Kumar </b></sub></a><br />
+    </td>
+    <td align="center">
+     <a href="https://github.com/aju22">
+    <img src="https://avatars.githubusercontent.com/u/72931799?v=4" width="100px;" alt=""/><br /><sub><b>Arjun Krishna</b></sub></a><br />
+	</td>
+	<td align="center">
+     <a href="https://github.com/jsparrow08">
+    <img src="https://avatars.githubusercontent.com/u/77740824?v=4" width="100px;" alt=""/><br /><sub><b>Utkrisht Singh</b></sub></a><br />
+	</td>
+
+</table>
+
+
+Please feel free to contact us for any quries and requrests. Thank you.
