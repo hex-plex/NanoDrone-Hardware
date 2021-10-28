@@ -63,7 +63,7 @@ def main():
                         print("\n")
                     else :
                         array[4] = 0
-                        print("disrmed !")
+                        print("disarmed !")
                         print("\n")
 
 
