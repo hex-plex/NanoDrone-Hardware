@@ -1266,6 +1266,30 @@ home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.ob
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build && $(MAKE) $(MAKESILENT) -f wifi_setup/CMakeFiles/wifi_setup.dir/build.make wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
@@ -1713,6 +1737,9 @@ help:
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.s"

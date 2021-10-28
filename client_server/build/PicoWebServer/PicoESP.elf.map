@@ -1175,9 +1175,9 @@ Discarded input sections
                 0x0000000000000000        0x1 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_mutex
                 0x0000000000000000        0x8 CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc5rLeU2.o
- .data          0x0000000000000000        0x0 /tmp/cc5rLeU2.o
- .bss           0x0000000000000000        0x0 /tmp/cc5rLeU2.o
+ .text          0x0000000000000000        0x0 /tmp/ccEdnv4j.o
+ .data          0x0000000000000000        0x0 /tmp/ccEdnv4j.o
+ .bss           0x0000000000000000        0x0 /tmp/ccEdnv4j.o
  .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atoi.o)
@@ -1828,7 +1828,7 @@ LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc5rLeU2.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccEdnv4j.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3087,7 +3087,7 @@ LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pic
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /tmp/cc5rLeU2.o
+LOAD /tmp/ccEdnv4j.o
 LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3207,7 +3207,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000800       0x2c CMakeFiles/PicoESP.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x000000000000082c       0x22 /tmp/cc5rLeU2.o
+                0x000000000000082c       0x22 /tmp/ccEdnv4j.o
  .ARM.attributes
                 0x000000000000084e       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

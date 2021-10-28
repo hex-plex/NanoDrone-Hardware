@@ -40,6 +40,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -113,6 +114,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/include"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/include"
+  "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 
 # The set of dependency files which are needed:
@@ -161,6 +163,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
+  "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"

@@ -996,6 +996,20 @@ wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
+wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: wifi_setup/CMakeFiles/wifi_setup.dir/flags.make
+wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: wifi_setup/CMakeFiles/wifi_setup.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -c /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+
+wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /usr/lib/ccache/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 # Object files for target wifi_setup
 wifi_setup_OBJECTS = \
 "CMakeFiles/wifi_setup.dir/main.cpp.obj" \
@@ -1064,7 +1078,8 @@ wifi_setup_OBJECTS = \
 "CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+"CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
+"CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target wifi_setup
 wifi_setup_EXTERNAL_OBJECTS =
@@ -1136,10 +1151,11 @@ wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff
 wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/home/hexplex0xff/picodev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/build.make
 wifi_setup/wifi_setup.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 wifi_setup/wifi_setup.elf: wifi_setup/CMakeFiles/wifi_setup.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable wifi_setup.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable wifi_setup.elf"
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wifi_setup.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objcopy -Oihex wifi_setup.elf wifi_setup.hex
 	cd /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/wifi_setup && /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objcopy -Obinary wifi_setup.elf wifi_setup.bin

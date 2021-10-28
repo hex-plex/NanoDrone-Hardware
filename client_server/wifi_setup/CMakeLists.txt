@@ -6,7 +6,7 @@ add_executable(wifi_setup
 # )
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(wifi_setup pico_stdlib hardware_gpio hardware_timer hardware_flash)
+target_link_libraries(wifi_setup pico_stdlib hardware_gpio hardware_timer pico_multicore hardware_flash)
 #add_executable(control_node main.c)
 #target_link_libraries(control_node pico_stdlib hardware_gpio hardware_timer pico_multicore)
 # target_link_libraries(FlashTest pico_stdlib hardware_gpio hardware_timer pico_multicore hardware_flash hardware_sync)

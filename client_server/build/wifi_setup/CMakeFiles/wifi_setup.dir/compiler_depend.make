@@ -2771,8 +2771,11 @@ wifi_setup/CMakeFiles/wifi_setup.dir/main.cpp.obj: ../wifi_setup/main.cpp \
   ../wifi_setup/espUart.h \
   /home/hexplex0xff/picodev/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
-  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
+  /home/hexplex0xff/picodev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  ../wifi_setup/ppm.h
 
+
+../wifi_setup/ppm.h:
 
 ../wifi_setup/espUart.h:
 

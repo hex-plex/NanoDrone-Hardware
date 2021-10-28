@@ -6,10 +6,11 @@
 
 #include "hardware/timer.h"
 
-
+#include "pico/multicore.h"
 #include <string.h>
 #include "flash_utils.h"
 #include "espUart.h"
+#include "hardware/gpio.h"
 
 
 
