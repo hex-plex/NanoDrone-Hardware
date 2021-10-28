@@ -50,7 +50,7 @@ def main():
                         # print("\n")
                 
                 if event.code == "ABS_Y":
-                    if 0 <= array[2] < 1000:
+                    if 0 <= array[2] < 700:
                         array[2] = (event.state * 1000)/256 #changing range from 256 to 1000
                         # print("throttel -> ")
                         # print(array[2])
