@@ -18,7 +18,9 @@ Below I have explained about the Modifications only
 
 This explains the connections between the FC and the Raspberrypi
 
-For the Connections with ESP follow this [guide](http://helloraspberrypi.blogspot.com/2021/02/connect-esp-01s-esp8266-to-raspberry-pi.html).
+For the Connections with ESP follow this :
+![](esp_raspi.png)
+
 
 and additionally connect `GPIO11` of the PICO to `UART2` RX of the FC
 
