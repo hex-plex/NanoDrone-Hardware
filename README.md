@@ -18,7 +18,7 @@ Below I have explained about the Modifications only
 
 This explains the connections between the FC and the Raspberrypi
 
-## For the Connections with ESP follow this :
+## For the Connections follow this circuit diagram :
 ![](esp_raspi.png)
 
 
