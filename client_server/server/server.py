@@ -187,9 +187,9 @@ def server_program():
                 cp = 2
             stdscr.addstr(shift_x+0,0, "\t\t\tArmed!!!!" if array[4]>500 else "\t\t\tDisarmed..", curses.color_pair(cp))
             stdscr.addstr(shift_x+1,0, "\t\t\tThrottle : "+str(array[2]//10), curses.color_pair(cp))
-            stdscr.addstr(shift_x+1,35,"Roll  : "+str(int((array[0]-500)/10)), curses.color_pair(cp))
+            stdscr.addstr(shift_x+1,55,"Roll  : "+str(int((array[0]-500)/10)), curses.color_pair(cp))
             stdscr.addstr(shift_x+2,0, "\t\t\tYaw      : "+str(array[2]//10), curses.color_pair(cp))
-            stdscr.addstr(shift_x+2,35,"Pitch : "+str(int((array[1]-500)/10)),curses.color_pair(cp))
+            stdscr.addstr(shift_x+2,55,"Pitch : "+str(int((array[1]-500)/10)),curses.color_pair(cp))
             stdscr.refresh()
         first = False
         # print(data)
