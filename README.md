@@ -14,9 +14,7 @@ Below are a few snap shots of the drone
 <img src="media/drone_top.jpg" width="50%"/><img src="media/drone_pico_circuit.jpg" width="50%"/>
 
 
-Below is a demo of the drone being controlled using a remote teleop from our ground station
-
-[] Mostly add a gif of the donre being controlled in mid air
+Below is a demo of the drone being controlled using a remote teleop from our ground station [**Drive Link**](https://drive.google.com/file/d/1SyTdQoA_HoSc0vJoVNXdMnX6LYcKFTU4/view?usp=sharing)
 
 ## Implementation
 Below I have explained about the Modifications only
