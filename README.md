@@ -27,7 +27,7 @@ Below I have explained about the Modifications only
 This explains the connections between the FC and the Raspberrypi
 
 ## For the Connections follow this circuit diagram :
-![](mediaesp_raspi.png)
+![](media/esp_raspi.png)
 
 
 and additionally connect `GPIO11` of the PICO to `UART2` RX of the FC
