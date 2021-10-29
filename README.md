@@ -6,7 +6,15 @@ Our main goal is to be able to control these drones with ROS and be able to use 
 
 For the current approach we are using [`F3 Evo`](https://robu.in/product/f3-evo-v2-0-flight-control/) for the main flight controller with CleanFlight's latest firmware (v2.5.0 at the time of documentation). We are using [`Raspberry Pi Pico`](https://robu.in/product/raspberry-pi-pico/) mainly because of the two physical cores it offers which we have utilized to the fullest by splitting ondemanding tasks on each of them. We have also used a ['ESP-01`](https://robu.in/product/esp-01-esp8266-serial-wifi-wireless-transceiver-module/) for interfacing through LAN on WiFi.
 
-### Drone In Action
+### Final Result
+
+Below are a few snap shots of the drone
+
+<img src="media/drone_front_closeup.jpg" width="50%"/><img src="media/drone_sideways.jpg" width="50%"/>
+<img src="media/drone_top.jpg" width="50%"/><img src="media/drone_pico_circuit.jpg" width="50%"/>
+
+
+Below is a demo of the drone being controlled using a remote teleop from our ground station
 
 [] Mostly add a gif of the donre being controlled in mid air
 
@@ -14,12 +22,12 @@ For the current approach we are using [`F3 Evo`](https://robu.in/product/f3-evo-
 Below I have explained about the Modifications only
 ### Circuit Board
 
-![](circuit.png)
+![](media/circuit.png)
 
 This explains the connections between the FC and the Raspberrypi
 
 ## For the Connections with ESP follow this :
-![](esp_raspi.png)
+![](media/esp_raspi.png)
 
 
 and additionally connect `GPIO11` of the PICO to `UART2` RX of the FC
