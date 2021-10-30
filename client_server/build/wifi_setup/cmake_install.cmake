@@ -1,4 +1,4 @@
-# Install script for directory: /home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/wifi_setup
+# Install script for directory: /Users/utkrisht08/NanoDrone-Hardware/client_server/wifi_setup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/opt/homebrew/bin/arm-none-eabi-objdump")
 endif()
 

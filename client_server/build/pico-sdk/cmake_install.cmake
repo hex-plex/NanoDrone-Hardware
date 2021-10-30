@@ -1,4 +1,4 @@
-# Install script for directory: /home/hexplex0xff/picodev/pico-sdk
+# Install script for directory: /Users/utkrisht08/workspace/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,14 +34,14 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/opt/homebrew/bin/arm-none-eabi-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/hexplex0xff/picodev/NanoDrone-Hardware/client_server/build/pico-sdk/docs/cmake_install.cmake")
+  include("/Users/utkrisht08/NanoDrone-Hardware/client_server/build/pico-sdk/tools/cmake_install.cmake")
+  include("/Users/utkrisht08/NanoDrone-Hardware/client_server/build/pico-sdk/src/cmake_install.cmake")
+  include("/Users/utkrisht08/NanoDrone-Hardware/client_server/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

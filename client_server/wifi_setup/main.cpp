@@ -61,7 +61,8 @@ int main() {
   sendCMD_waitResp("AT",50000);
   sleep_ms(1000);
 
-  
+  sendCMD_waitResp("AT+CWMODE=1",500000);
+  sleep_ms(1000);
   // sendCMD_waitResp("AT+CWJAP=\"jsparrow_2.4Ghz\",\"happy@123\"",50000);
   // sleep_ms(5000);
   char inp_str[MAX_LEN] = "AT+CWJAP=\"";
