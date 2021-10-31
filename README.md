@@ -42,11 +42,11 @@ This has its PPM cycles run by which this core is isolated from every other proc
 
 ## Instructions
 
-- 1. Use `wifi_setup.uf2` file in the `bin/` folder and input your Wifi credentials and Server Ip with port number all of them input with a enter or new line folloiwing those. This should be done through minicom or any similar serial interface. This would setup the ESP on the given Wifi network with the given credentials. This has to be done only once.
+- 1. Use `FlashWrite.uf2` file in the `bin/` folder and input your Wifi credentials and Server Ip with port number all of them input with a enter or new line folloiwing those. This will write your wifi information, ip address and port number in the memory.This should be done through minicom or any similar serial interface.
 
-- 2. Use `FlashWrite.uf2` file in the `bin/` folder and fillout the same. This is only for being able to change the server IP and the port of the ground station system. This will not affect the Wifi you are connected as this data will only be used to open a connection.
+- 2. Use `wifi_setup.uf2` file in the `bin/` folder.  This would setup the ESP on the given Wifi network with the given credentials. This has to be done only once.
 
-- 3. Use the `PicoESP.uf2` file in the `bin/` folder and connect the pin number `GPIO-11` to the UART 2 RX of the F3 flight controller. you may choose to power the pico board using a external regulator or the onboard power distribution. There you go you have everything running.
+- 3. Use the `PicoESP.uf2` file in the `bin/` folder and connect the pin number `GPIO-11` to the UART 2 RX of the F3 flight controller. you may choose to power the pico board using a external regulator or the onboard power distribution. There you go you have everything running.(If you ip address or port number is changed, use the `FlashWrite.uf2` file again and update the new credentials. No need to use `wifi_setup.uf2` again unless wifi network is not changed)
 
 For running this launch the `server.py` or the joystick based server, now connect the pico to the drone and this should launch a controller like layout on your terminal now **Press 'F' to pay respects** and arm the drone. Use the joystick wisely.
 
