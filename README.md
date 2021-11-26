@@ -66,6 +66,10 @@ For running this launch the `server.py` or the joystick based server, now connec
      <a href="https://github.com/jsparrow08">
     <img src="https://avatars.githubusercontent.com/u/77740824?v=4" width="100px;" alt=""/><br /><sub><b>Utkrisht Singh</b></sub></a><br />
 	</td>
+	<td align="center">
+     <a href="https://github.com/generalVader">
+    <img src="https://avatars.githubusercontent.com/u/77744383?v=4" width="100px;" alt=""/><br /><sub><b>Utkrisht Singh</b></sub></a><br />
+	</td>
 
 </table>
 
